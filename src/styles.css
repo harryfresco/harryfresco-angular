@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Futura PT Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Medium'), url('app/fonts/futura-pt-cufonfonts-webfont/FuturaCyrillicMedium.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'Futura PT Light';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Futura PT Light'), url('app/fonts/futura-pt-cufonfonts-webfont/FuturaCyrillicLight.woff') format('woff');
+      }
+      p{
+        font-family: 'Roboto', sans-serif; font-weight: 300; color: rgb(84, 84, 84); font-size: 13pt;
+    }
+    .galleryTitle{
+        font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 55px;
+        letter-spacing: 2px;
+          text-align: right;
+          text-decoration: none;
+          transition: color 0.20s ease-in-out;
+      }
+      .galleryDesc{
+        font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 2px;
+          text-align: right;
+          text-decoration: none;
+          transition: color 0.20s ease-in-out;
+      }
+      .newButton{
+        padding: 21px 34px;
+       font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 15px;
+          letter-spacing: 1px;
+      color: black;
+      }

@@ -1,16 +1,7 @@
+
 <p>navbar works!</p>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-  function showMusic() {
 
-      let musicDiv = document.getElementById('musicContainer');
-      musicDiv.innerHTML="<audio controls id='music' class='musicText' style='visibility: hidden; position:relative'><source src='../media/gallery.mp3' type='audio/mpeg'> Your browser does not support the audio element.</audio>";
-      let music = document.getElementById("music")
-      music.play();
-      music.style.visibility="visible";
-  }
-
-</script>
 <!-- Simulate a smartphone / tablet -->
 
 
@@ -18,13 +9,13 @@
   <div class="topnav">
     <a class="active navbarText" id="title" style="visibility: hidden;">Harry Fresco</a>
     <div id="myLinks">
-      <a class="navbarText" routerLink="/">june '22</a>
-      <a class="navbarText" routerLink="/">jan '23</a>
-      <a class="navbarText rainbowText" routerLink="/">may '23</a>
-      <a class="navbarText rainbowText" routerLink="/">aug '23</a>
-      <a class="navbarText rainbowText" routerLink="/">june '24</a>
+      <a class="navbarText" routerLink="/june22" onClick="changeNavTitle()">june '22</a>
+      <a class="navbarText" routerLink="/jan23"onClick="changeNavTitle()">jan '23</a>
+      <a class="navbarText rainbowText" routerLink="/"onClick="changeNavTitle()">may '23</a>
+      <a class="navbarText rainbowText" routerLink="/"onClick="changeNavTitle()">aug '23</a>
+      <a class="navbarText rainbowText" routerLink="/"onClick="changeNavTitle()">june '24</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a class="icon" onClick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -38,10 +29,10 @@
   </div> -->
   <div class="row desktopNav">
     <div class="col" style="text-align: center;">
-      <a class="navbarText" routerLink="/">june '22</a>
+      <a class="navbarText" routerLink="/june22">june '22</a>
     </div>
     <div class="col" style="text-align: center;">
-      <a class="navbarText" routerLink="/">jan '23</a>
+      <a class="navbarText" routerLink="/jan23">jan '23</a>
     </div>
     <div class="col rainbowText" style="text-align: center;">
       <a class="navbarText rainbowText" routerLink="/">may '23</a>
@@ -71,32 +62,6 @@
   <!-- End smartphone / tablet look -->
 
   
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-  var path = window.location.pathname;
-    var page = path.split("/").pop();
-    let navLinks = document.querySelectorAll(".navbarText");
 
-    navLinks.forEach(links => {
-      console.log(links)
-      links.classList.remove('active');
-      let actives = document.querySelectorAll('a[href*="' + page + '"]');
-      actives.forEach(each => {
-        each.classList.add('desktopNavActive');
-      })
-    });
-    let title = document.querySelector("#title");
-    console.log(title)
-      title.style.visibility ="visible"
-      title.textContent = document.querySelector('a[href*="' + page + '"]').textContent;
-    
-  </script>
 <br>
 
