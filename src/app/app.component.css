@@ -10,3 +10,7 @@
       font-weight: normal;
       src: local('Futura PT Light'), url('fonts/futura-pt-cufonfonts-webfont/FuturaCyrillicLight.woff') format('woff');
       }
+      p{
+        font-family: 'Roboto', sans-serif; font-weight: 300; color: rgb(84, 84, 84); font-size: 13pt;
+    }
+    
