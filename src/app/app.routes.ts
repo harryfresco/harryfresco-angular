@@ -8,16 +8,22 @@ import { June24Component } from './june24/june24.component';
 import { LandingComponent } from './landing/landing.component';
 import { ChooseComponent } from './choose/choose.component';
 import { WizardComponent } from './wizard/wizard.component';
+import { June24dComponent } from './june24d/june24d.component';
+import { JapanComponent } from './japan/japan.component';
+import { SkyComponent } from './sky/sky.component';
 
 export const routes: Routes = [
-    { path : 'june22', component: June22Component},
-    { path : 'jan23', component: Jan23Component},
-    { path : 'may23', component: May23Component},
-    { path : 'aug23', component: Aug23Component},
-    { path : 'june24', component: June24Component},
+    { path : 'analogue/june22', component: June22Component},
+    { path : 'analogue/jan23', component: Jan23Component},
+    { path : 'analogue/may23', component: May23Component},
+    { path : 'analogue/aug23', component: Aug23Component},
+    { path : 'analogue/june24', component: June24Component},
     { path : 'landing', component: LandingComponent},
     { path : 'choose', component: ChooseComponent},
-    { path : 'wizard', component: WizardComponent},
+    { path : 'digital/wizard', component: WizardComponent},
+    { path : 'digital/june24d', component: June24dComponent},
+    { path : 'digital/japan', component: JapanComponent},
+    { path : 'digital/sky', component: SkyComponent},
     { path: '', redirectTo: '/landing', pathMatch: 'full'}
    /* { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar-digital',
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './navbar-digital.component.html',
   styleUrl: './navbar-digital.component.css'
 })
@@ -18,4 +18,11 @@ export class NavbarDigitalComponent {
     document.getElementsByTagName('head')[0].appendChild(node);
  }
 
+
+ __URL:string = ""
+ constructor(public router: Router) {
+  
+ // console.log(router.url); // This will print the current url
+  this.__URL = this.router.url;
+ }
 }

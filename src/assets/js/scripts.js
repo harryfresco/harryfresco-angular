@@ -54,7 +54,7 @@ function changeNavLinks(page){
 var path = window.location.pathname;
 var page = path.split("/").pop();
 changeNavLinks(page)
-function changeImageOpacity(opacity) {
+function changeImageOpacityLanding(opacity) {
   const image = document.querySelector('.backgroundImage');
   image.style.opacity = opacity;
 }
@@ -79,7 +79,8 @@ function changeImageOpacity(opacity) {
       image.style.opacity = opacity;
 
   }
-/*   $(window).on('load', function(){
+/*   $('#firstImg').on('load', function(){
     $('#loading').hide();
     $('#fullscreen').hide();
+    console.log("HI!")
   }) */

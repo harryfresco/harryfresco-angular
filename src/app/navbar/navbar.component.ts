@@ -19,7 +19,12 @@ export class NavbarComponent {
  }
 
 
-
+ __URL:string = ""
+ constructor(public router: Router) {
+  
+  //console.log(router.url); // This will print the current url
+  this.__URL = this.router.url;
+ }
 
 }
 

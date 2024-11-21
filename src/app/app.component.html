@@ -1,7 +1,7 @@
 
+<app-navbar *ngIf="__URL.startsWith('/analogue/')"></app-navbar>
 
-<app-navbar *ngIf="router != '/landing'"></app-navbar>
-<app-landing *ngIf="router == '/landing'"></app-landing>
-<app-navbar-digital *ngIf="router=='/wizard'"></app-navbar-digital>
-<app-footer></app-footer>
+<app-navbar-digital *ngIf="__URL.startsWith('/digital/')"></app-navbar-digital>
+
 <router-outlet></router-outlet>
+<app-footer *ngIf="__URL.startsWith!('/analogue/') || __URL.startsWith!('/digital/') "></app-footer>
