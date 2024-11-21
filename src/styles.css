@@ -1,4 +1,8 @@
+
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #f7f1de;
+}
 @font-face {
     font-family: 'Futura PT Medium';
     font-style: normal;
@@ -43,3 +47,32 @@
           letter-spacing: 1px;
       color: black;
       }
+
+   
+
+    .loader {
+      display: inline-grid;
+      z-index: 1000;
+    }
+    .loader:before,
+    .loader:after {
+      content: "";
+      height: 27px;
+      aspect-ratio: 5;
+      --c: #000 90deg,#0000 0;
+      background:
+       conic-gradient(from 135deg at top   ,var(--c)),
+       conic-gradient(from -45deg at bottom,var(--c)) 12.5% 100%;
+      background-size: 20% 50%;
+      background-repeat: repeat-x;
+      -webkit-mask: repeating-linear-gradient(90deg,#000 0 15%,#0000 0 50%) 0 0/200%;
+      animation: l8 .8s infinite linear;
+    }
+    .loader:after {
+      animation-delay: -.2s;
+      animation-direction: reverse;
+    }
+    @keyframes l8{
+      to {-webkit-mask-position:-100% 0}
+    }
+    

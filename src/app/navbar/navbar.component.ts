@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 declare function myFunction(): void;
 @Component({
   selector: 'app-navbar',

@@ -15,38 +15,42 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-var path = window.location.pathname;
-    var page = path.split("/").pop();
-    let navLinks = document.querySelectorAll(".navbarText");
+function changeNavLinks(page){
 
+    //var path = window.location.pathname;
+    //var page = path.split("/").pop();
+    let navLinks = document.querySelectorAll(".navbarText");
+  
     navLinks.forEach(links => {
-      console.log(links)
+      //console.log(links)
       links.classList.remove('active');
-      let actives = document.querySelectorAll('a[href*="' + page + '"]');
+      links.classList.remove('desktopNavActive');
+      links.style.visibility="visible";
+      links.style.display="block";
+      let actives = document.querySelectorAll('a[routerLink*="' + page + '"]');
+    
       actives.forEach(each => {
+      if(each.closest(".desktopNav")){
         each.classList.add('desktopNavActive');
+     
+      }
+      else{
+        
+        each.style.visibility="hidden";
+        each.style.display="none";
+        
+        let title = document.querySelector("#title");
+        title.style.visibility ="visible"
+        title.textContent = each.textContent;
+      }
+        
+
+   
       })
     });
-    let title = document.querySelector("#title");
-    console.log(title)
-      title.style.visibility ="visible"
-      title.textContent = document.querySelector('a[href*="' + page + '"]').textContent;
-function changeNavTitle(){
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
-    let navLinks = document.querySelectorAll(".navbarText");
-
-    navLinks.forEach(links => {
-      console.log(links)
-      links.classList.remove('active');
-      let actives = document.querySelectorAll('a[href*="' + page + '"]');
-      actives.forEach(each => {
-        each.classList.add('desktopNavActive');
-      })
-    });
-    let title = document.querySelector("#title");
-    console.log(title)
-      title.style.visibility ="visible"
-      title.textContent = document.querySelector('a[routerLink*="' + page + '"]').textContent;
+   
+  
 }
-
+var path = window.location.pathname;
+var page = path.split("/").pop();
+changeNavLinks(page)

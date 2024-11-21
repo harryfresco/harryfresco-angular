@@ -27,7 +27,7 @@
   }
   
   .desktopNavActive{
-    font-family: 'Futura PT Medium';
+
     text-decoration: underline !important;
   
   }
@@ -72,6 +72,7 @@
   .mobileTitle{
     visibility: hidden;
     display: none;
+    text-decoration: underline !important;
   }
   @media (max-width: 667px) {
     .topnav {
