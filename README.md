@@ -12,8 +12,7 @@ ng serve
 
 ## To Do
 
-Make navbar show correct comp
-add comps
+View All and About
 
 
 
