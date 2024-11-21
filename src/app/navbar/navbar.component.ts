@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
+import { Router, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 declare function myFunction(): void;
 @Component({
   selector: 'app-navbar',
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -18,4 +18,8 @@ export class NavbarComponent {
     document.getElementsByTagName('head')[0].appendChild(node);
  }
 
+
+
+
 }
+

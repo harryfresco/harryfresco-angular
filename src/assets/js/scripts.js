@@ -54,3 +54,32 @@ function changeNavLinks(page){
 var path = window.location.pathname;
 var page = path.split("/").pop();
 changeNavLinks(page)
+function changeImageOpacity(opacity) {
+  const image = document.querySelector('.backgroundImage');
+  image.style.opacity = opacity;
+}
+
+
+    function displayRandomMessage() {
+      const list = 
+      [
+          "entry, please...",
+          "open, says me"
+      ]
+  
+        var randomIndex = Math.floor(Math.random() * list.length);
+        var randomMessage = list[randomIndex];
+        var messageElement = document.getElementById("landingText");
+        messageElement.innerHTML = randomMessage;
+    }
+    displayRandomMessage()
+
+    function changeImageOpacity(opacity, col) {
+      let image = document.querySelector(col);
+      image.style.opacity = opacity;
+
+  }
+/*   $(window).on('load', function(){
+    $('#loading').hide();
+    $('#fullscreen').hide();
+  }) */

@@ -1,6 +1,7 @@
 
 
-<app-navbar></app-navbar>
-
+<app-navbar *ngIf="router != '/landing'"></app-navbar>
+<app-landing *ngIf="router == '/landing'"></app-landing>
+<app-navbar-digital *ngIf="router=='/wizard'"></app-navbar-digital>
 <app-footer></app-footer>
 <router-outlet></router-outlet>

@@ -1,0 +1,95 @@
+.navbarText{
+    font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: black;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+}
+.navbarText:hover{
+    color:rgb(211, 211, 211);
+    cursor: pointer;
+}
+#musicText{
+    cursor: pointer;
+    transition: color 0.20s ease-in-out;
+}
+#musicText:hover{
+    color:rgb(211, 211, 211);
+}
+.rainbowText {
+    background-image: linear-gradient(to left, rgb(211, 181, 211), rgb(172, 154, 186), rgb(156, 156, 241), rgb(107, 156, 107), rgb(213, 213, 119), rgb(239, 216, 174), rgb(253, 139, 139));
+    color: rgba(0, 0, 0, 0.1);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .desktopNavActive{
+
+    text-decoration: underline !important;
+  
+  }
+  .topnav {
+    overflow: hidden;
+  
+    position: relative;
+    visibility: hidden;
+    display: none;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: none;
+  }
+  
+  .topnav a.icon {
+    /* background: #949494; */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #949494;
+    color: black;
+  }
+  
+  .desktopNav {
+    visibility: visible;
+  }
+  
+  .mobileTitle{
+    visibility: hidden;
+    display: none;
+    text-decoration: underline !important;
+  }
+  @media (max-width: 667px) {
+    .topnav {
+        visibility: visible;
+        display: block;
+    }
+    .topnav a {
+      visibility: visible;
+      display: block;
+  }
+    .desktopNav {
+      visibility: hidden;
+      display: none;
+    }
+    .mobileTitle{
+      visibility: visible;
+      display: block;
+    }
+  }
+  
