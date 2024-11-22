@@ -10,13 +10,19 @@ To start a local development server, run:
 ng serve
 ```
 
-## To Do
-
-View All and About
-
-
-
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+
+## To Build and Deploy
+
+```bash
+ng build --base-href="https://harryfresco.github.io/harryfresco-angular/"
+```
+Then, copy contents of browser folder up a level, to sit in docs
+Copy index.html and rename the copy to 404.html
+Then commit and push to Git
+
+
 
 ## Code scaffolding
 
