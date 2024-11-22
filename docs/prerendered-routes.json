@@ -1,17 +1,17 @@
 {
   "routes": {
-    "/harryfresco-angular": {},
-    "/harryfresco-angular/analogue/aug23": {},
-    "/harryfresco-angular/analogue/jan23": {},
-    "/harryfresco-angular/analogue/june22": {},
-    "/harryfresco-angular/analogue/june24": {},
-    "/harryfresco-angular/analogue/may23": {},
-    "/harryfresco-angular/choose": {},
-    "/harryfresco-angular/digital/japan": {},
-    "/harryfresco-angular/digital/june24d": {},
-    "/harryfresco-angular/digital/sky": {},
-    "/harryfresco-angular/digital/wizard": {},
-    "/harryfresco-angular/gallery": {},
-    "/harryfresco-angular/landing": {}
+    "/https://harryfresco.github.io/harryfresco-angular": {},
+    "/https://harryfresco.github.io/harryfresco-angular/analogue/aug23": {},
+    "/https://harryfresco.github.io/harryfresco-angular/analogue/jan23": {},
+    "/https://harryfresco.github.io/harryfresco-angular/analogue/june22": {},
+    "/https://harryfresco.github.io/harryfresco-angular/analogue/june24": {},
+    "/https://harryfresco.github.io/harryfresco-angular/analogue/may23": {},
+    "/https://harryfresco.github.io/harryfresco-angular/choose": {},
+    "/https://harryfresco.github.io/harryfresco-angular/digital/japan": {},
+    "/https://harryfresco.github.io/harryfresco-angular/digital/june24d": {},
+    "/https://harryfresco.github.io/harryfresco-angular/digital/sky": {},
+    "/https://harryfresco.github.io/harryfresco-angular/digital/wizard": {},
+    "/https://harryfresco.github.io/harryfresco-angular/gallery": {},
+    "/https://harryfresco.github.io/harryfresco-angular/landing": {}
   }
 }
