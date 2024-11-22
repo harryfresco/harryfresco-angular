@@ -1,7 +1,7 @@
 
 <app-navbar *ngIf="__URL.startsWith('/analogue/')"></app-navbar>
-
+<app-header *ngIf="__URL.startsWith('/gallery')"></app-header>
 <app-navbar-digital *ngIf="__URL.startsWith('/digital/')"></app-navbar-digital>
 
 <router-outlet></router-outlet>
-<app-footer *ngIf="__URL.startsWith!('/analogue/') || __URL.startsWith!('/digital/') "></app-footer>
+<app-footer *ngIf="__URL.startsWith!('/analogue/') || __URL.startsWith!('/digital/')  "></app-footer>

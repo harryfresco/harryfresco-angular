@@ -10,12 +10,12 @@ declare function myFunction(): void;
 })
 export class NavbarComponent {
   ngOnInit(): void {
-    let node = document.createElement('script');
+/*     let node = document.createElement('script');
     node.src = "../assets/js/scripts.js";//Change to your js file
     node.type = 'text/javascript';
     node.async = true;
     node.charset = 'utf-8';
-    document.getElementsByTagName('head')[0].appendChild(node);
+    document.getElementsByTagName('head')[0].appendChild(node); */
  }
 
 

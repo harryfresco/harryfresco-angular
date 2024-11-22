@@ -24,6 +24,7 @@ export const routes: Routes = [
     { path : 'digital/june24d', component: June24dComponent},
     { path : 'digital/japan', component: JapanComponent},
     { path : 'digital/sky', component: SkyComponent},
+    { path : 'gallery', loadComponent:() => import('./gallery/gallery.component').then(m=>m.GalleryComponent)},
     { path: '', redirectTo: '/landing', pathMatch: 'full'}
    /* { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },

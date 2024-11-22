@@ -9,9 +9,10 @@ import { CommonModule } from '@angular/common';
 import { LandingComponent } from "./landing/landing.component";  
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { HeaderComponent } from "./header/header.component";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, LandingComponent, NavbarDigitalComponent, NgIf],
+  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, LandingComponent, NavbarDigitalComponent, NgIf, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
