@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/harryfresco-angular/',
+  basePath: '/',
   entryPoints: new Map([['', () => import('./main.server.mjs')]]),
 };
   

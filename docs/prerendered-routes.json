@@ -1,17 +1,17 @@
 {
   "routes": {
-    "/harryfresco-angular": {},
-    "/harryfresco-angular/analogue/aug23": {},
-    "/harryfresco-angular/analogue/jan23": {},
-    "/harryfresco-angular/analogue/june22": {},
-    "/harryfresco-angular/analogue/june24": {},
-    "/harryfresco-angular/analogue/may23": {},
-    "/harryfresco-angular/choose": {},
-    "/harryfresco-angular/digital/japan": {},
-    "/harryfresco-angular/digital/june24d": {},
-    "/harryfresco-angular/digital/sky": {},
-    "/harryfresco-angular/digital/wizard": {},
-    "/harryfresco-angular/gallery": {},
-    "/harryfresco-angular/landing": {}
+    "/": {},
+    "/analogue/aug23": {},
+    "/analogue/jan23": {},
+    "/analogue/june22": {},
+    "/analogue/june24": {},
+    "/analogue/may23": {},
+    "/choose": {},
+    "/digital/japan": {},
+    "/digital/june24d": {},
+    "/digital/sky": {},
+    "/digital/wizard": {},
+    "/gallery": {},
+    "/landing": {}
   }
 }
