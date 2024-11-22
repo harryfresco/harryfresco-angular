@@ -72,13 +72,26 @@ function changeImageOpacityLanding(opacity) {
         var messageElement = document.getElementById("landingText");
         messageElement.innerHTML = randomMessage;
     }
-    displayRandomMessage()
+    //displayRandomMessage()
 
     function changeImageOpacity(opacity, col) {
       let image = document.querySelector(col);
+      console.log(col)
       image.style.opacity = opacity;
 
   }
+  function changeImageOpacityGallery(opacity, column) {
+            
+    let image = document.getElementsByClassName(column);
+    var imageIdList = new Array();
+
+    for (var i = 0, n = image.length; i < n; ++i) {
+        var el = image[i];
+        el.style.opacity = opacity;
+        
+    }
+    
+}
 /*   $('#firstImg').on('load', function(){
     $('#loading').hide();
     $('#fullscreen').hide();
