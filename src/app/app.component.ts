@@ -6,13 +6,12 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { NavbarDigitalComponent } from "./navbar-digital/navbar-digital.component";
 import { FooterComponent } from "./footer/footer.component";
 import { CommonModule } from '@angular/common';
-import { LandingComponent } from "./landing/landing.component";  
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { HeaderComponent } from "./header/header.component";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, LandingComponent, NavbarDigitalComponent, NgIf, HeaderComponent],
+  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule,  NavbarDigitalComponent, NgIf, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
