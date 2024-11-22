@@ -1,17 +1,3 @@
 {
-  "routes": {
-    "/": {},
-    "/analogue/aug23": {},
-    "/analogue/jan23": {},
-    "/analogue/june22": {},
-    "/analogue/june24": {},
-    "/analogue/may23": {},
-    "/choose": {},
-    "/digital/japan": {},
-    "/digital/june24d": {},
-    "/digital/sky": {},
-    "/digital/wizard": {},
-    "/gallery": {},
-    "/landing": {}
-  }
+  "routes": {}
 }

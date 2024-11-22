@@ -13,8 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs/",
-            "index": "src/index.html",
+            "outputPath": "docs",
+            "index":{
+              "input": "src/index.html",
+              "output": "../index.html"
+            } ,
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -30,10 +33,9 @@
             ],
             "scripts": [  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js","src/assets/js/scripts.js", "./node_modules/jquery/dist/jquery.min.js"],
             "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            
+            "ssr": false,
+            "prerender":false
           },
           "configurations": {
             "production": {
@@ -99,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
