@@ -9,10 +9,12 @@ import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { HeaderComponent } from "./header/header.component";
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule,  NavbarDigitalComponent, NgIf, HeaderComponent],
   templateUrl: './app.component.html',
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   styleUrl: './app.component.css'
 })
 export class AppComponent {
