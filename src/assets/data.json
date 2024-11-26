@@ -1,0 +1,95 @@
+
+{
+    "/analogue/aug23":
+        {
+        "format":"analogue",
+        "route":"/analogue/aug23",
+        "navbarTitle":"aug '23",
+        "title":"the wales trip.",
+        "desc":"again, this was Portra 400",
+        "images":[
+            {
+                "imgTitle":"mount snowden",
+                "imgDesc":"summit",
+                "imgPath":"assets/img/aug23/063800010030~2.webp"
+            },
+            {
+                "imgTitle":"portmeirion, wales",
+                "imgDesc":"the village.",
+                "imgPath":"assets/img/aug23/Untitled-1.webp"
+            },
+            {
+                "imgTitle":"charming fella.",
+                "imgDesc":"woah, who this?",
+                "imgPath":"assets/img/aug23/063800010013.webp"
+            },
+            {
+                "imgTitle":"",
+                "imgDesc":"",
+                "imgPath":"assets/img/aug23/063800010023.webp"
+            },
+            {
+                "imgTitle":"mount snowden",
+                "imgDesc":"snowdonia",
+                "imgPath":"assets/img/aug23/063800010029.webp"
+            },
+            {
+                "imgTitle":"the village",
+                "imgDesc":"who is number one?",
+                "imgPath":"assets/img/aug23/Untitled-2.webp"
+            },
+            {
+                "imgTitle":"i am not a number",
+                "imgDesc":"i am a free man",
+                "imgPath":"assets/img/aug23/063800010034.webp"
+            }
+        ]
+
+    },
+    "/analogue/test":
+        {
+        "format":"analogue",
+        "route":"/analogue/aug23",
+        "navbarTitle":"aug 'test",
+        "title":"the wales trip.",
+        "desc":"again, this was Portra 400",
+        "images":[
+            {
+                "imgTitle":"mount snowden",
+                "imgDesc":"summit",
+                "imgPath":"assets/img/aug23/063800010030~2.webp"
+            },
+            {
+                "imgTitle":"portmeirion, wales",
+                "imgDesc":"the village.",
+                "imgPath":"assets/img/aug23/Untitled-1.webp"
+            },
+            {
+                "imgTitle":"charming fella.",
+                "imgDesc":"woah, who this?",
+                "imgPath":"assets/img/aug23/063800010013.webp"
+            },
+            {
+                "imgTitle":"",
+                "imgDesc":"",
+                "imgPath":"assets/img/aug23/063800010023.webp"
+            },
+            {
+                "imgTitle":"mount snowden",
+                "imgDesc":"snowdonia",
+                "imgPath":"assets/img/aug23/063800010029.webp"
+            },
+            {
+                "imgTitle":"the village",
+                "imgDesc":"who is number one?",
+                "imgPath":"assets/img/aug23/Untitled-2.webp"
+            },
+            {
+                "imgTitle":"i am not a number",
+                "imgDesc":"i am a free man",
+                "imgPath":"assets/img/aug23/063800010034.webp"
+            }
+        ]
+
+    }
+}

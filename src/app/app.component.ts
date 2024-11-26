@@ -10,9 +10,11 @@ import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { PhotoComponent } from "./photo/photo.component";
+import { DataService } from './data.service';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule,  NavbarDigitalComponent, NgIf, HeaderComponent],
+  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NavbarDigitalComponent, NgIf, HeaderComponent, PhotoComponent],
   templateUrl: './app.component.html',
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   styleUrl: './app.component.css'
@@ -22,8 +24,9 @@ export class AppComponent {
 
   private routeSubscription: Subscription = new Subscription(); // To hold the subscription
   __URL: string = '';
-
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private location: Location) {}
+  pageData: any = {};
+  nav: string ='';
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private location: Location, private dataService: DataService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     // Subscribe to route changes
@@ -34,10 +37,21 @@ export class AppComponent {
         this.__URL = event.urlAfterRedirects;
         
 
-        // Access route parameters if needed
-        this.activatedRoute.params.subscribe(params => {
-      
-        });
+
+          //const slug = params.get('route');
+          if (this.__URL) {
+            // Fetch data based on the 'route' from the JSON file
+            this.dataService.getData(this.__URL).subscribe((data) => {
+              this.pageData = data;
+             // console.log(this.pageData)
+            });
+                        // Fetch data based on the 'route' from the JSON file
+                        this.dataService.getNav().subscribe((data) => {
+                          this.nav = data;
+                         console.log(this.nav)
+                        });
+          }
+    
       });
   }
 
