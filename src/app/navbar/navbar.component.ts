@@ -5,8 +5,7 @@ import { filter, Subscription } from 'rxjs';
 import { DataService } from '../data.service';
 declare function myFunction(): void;
 import { NgFor,  NgIf,NgClass} from '@angular/common'; 
-import * as script 
-    from "../../assets/js/scripts.js" ;
+
 declare function makeLinksActive(): void;
 @Component({
   selector: 'app-navbar',
@@ -34,17 +33,9 @@ export class NavbarComponent {
           this.dataService.getNavFromFormat(this.__URL).subscribe((data) => {
             
             this.nav = data;
-           //console.log(this.nav)
+           console.log(this.__URL)
           });
-    // Subscribe to route changes
-    this.routeSubscription = this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd)) // Listen for NavigationEnd events
-      .subscribe((event: NavigationEnd) => {
-        // Get the current URL when navigation ends
-        this.__URL = event.urlAfterRedirects;
-        script.makeLinksActive();
-    
-      });
+
 
         }
 

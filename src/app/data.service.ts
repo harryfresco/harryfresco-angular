@@ -22,12 +22,15 @@ export class DataService {
     
     //const regex = new RegExp("/analogue/aug23", 'i');  // 'i' for case-insensitive search
     // Fetch the entire JSON file
+  var url = route.split("/");
+  var page = "/"+url[1]
+  console.log(page)
     return this.http.get<any>('assets/data.json').pipe(
 
      map(data => {
 
       const filteredData = Object.keys(data)
-      .filter(key => key.startsWith('/analogue'))  // Match keys that start with '/analogue'
+      .filter(key => key.startsWith(page))  // Match keys that start with '/analogue'
       .reduce((obj, key) => {
         obj.push(data[key]);  // Add the matching key-value pairs to the result object
         return obj;

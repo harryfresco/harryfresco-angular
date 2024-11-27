@@ -54,11 +54,7 @@ function changeNavLinks(page){
   
 }
 
-export function makeLinksActive(){
-  var path = window.location.pathname;
-  var page = path.split("/").pop();
-  changeNavLinks(page)
-}
+
 function changeImageOpacityLanding(opacity) {
   const image = document.querySelector('.backgroundImage');
   image.style.opacity = opacity;
