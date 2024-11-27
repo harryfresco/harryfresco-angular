@@ -77,12 +77,11 @@ function changeImageOpacityLanding(opacity) {
 
     function changeImageOpacity(opacity, col) {
       let image = document.querySelector(col);
-      console.log(col)
       image.style.opacity = opacity;
 
   }
   function changeImageOpacityGallery(opacity, column) {
-            
+            //console.log(column)
     let image = document.getElementsByClassName(column);
     var imageIdList = new Array();
 

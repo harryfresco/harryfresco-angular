@@ -18,6 +18,47 @@ export class DataService {
     );
 
   }
+  getSeperatedFormatData(): Observable<any> {
+    let analogue=[]
+    let digital = []
+    let mixed=[]
+    return this.http.get<any>('assets/data.json').pipe(
+
+      map(data => {
+
+        const filteredData = data
+          .filter(key => key.startsWith("/analogue"));
+        analogue.push(filteredData);
+        const filteredData2 = data
+        .filter(key => key.startsWith("/digital"));
+      digital.push(filteredData2);
+        mixed[0]=filteredData;
+        mixed[1]=filteredData2;
+        return mixed;
+
+      })
+      
+    );
+
+  }
+  getAllFromFormat(format: string){
+    return this.http.get<any>('assets/data.json').pipe(
+
+      map(data => {
+
+        const filteredData = Object.keys(data)
+          .filter(key => key.startsWith(format))  // Match keys that start with '/analogue'
+          .reduce((obj, key) => {
+            obj.push(data[key]);  // Add the matching key-value pairs to the result object
+            return obj;
+          }, []);  // Initialize an empty object to accumulate the result
+
+        return filteredData;
+
+      })
+
+    );
+  }
   getNavFromFormat(route: string): Observable<any> {
 
    

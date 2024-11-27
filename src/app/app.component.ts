@@ -39,15 +39,6 @@ export class AppComponent {
         
 
 
-          //const slug = params.get('route');
-          if (this.__URL) {
-            // Fetch data based on the 'route' from the JSON file
-            this.dataService.getData(this.__URL).subscribe((data) => {
-              this.pageData = data;
-             // console.log(this.pageData)
-             
-            });
-          }
     
       });
   }

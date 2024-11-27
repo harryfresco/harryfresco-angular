@@ -1,19 +1,19 @@
-<div class="container">
+<div class="container" >
 
-    <div class="rowGallery">
-        <div class="columnGallery">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row3')" onmouseout="changeImageOpacityGallery(1, 'row3')" routerLink="/analogue/june22">
+    <div class="rowGallery" *ngIf="allInFormat">
+        <div class="columnGallery" *ngFor="let month of allInFormat;let index = index">
+            <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" routerLink={{month.route}}>
 
-            <img src="assets/img/June22/042480010015.webp" class="row3 imageHover" alt="underground">
-            <img src="assets/img/June22/042480010036.webp" class="row3 imageHover" alt="B&W BBC Television Centre">
+            <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" alt="underground" >
+<!--             <img src="assets/img/June22/042480010036.webp" class="row3 imageHover" alt="B&W BBC Television Centre">
             <img src="assets/img/June22/042480010028.webp" class="row3 imageHover" alt="B&W of me playing piano with a silly hat">
             <img src="assets/img/June22/042480010009.webp" class="row3 imageHover" alt="B&W of a fake panda in Leicester Sq">
             <img src="assets/img/June22/042480010014.webp" class="row3 imageHover" alt="B&W of London underground">
             <img src="assets/img/June22/042480010037.webp" class="row3 imageHover" alt="B&W of BBC television centre">
-            <img src="assets/img/June22/042480010012~2.webp" class="row3 imageHover" alt="B&W of Leicester Square">
+            <img src="assets/img/June22/042480010012~2.webp" class="row3 imageHover" alt="B&W of Leicester Square"> -->
         </a>
         </div>
-        <div class="columnGallery">
+       <!--  <div class="columnGallery">
             <a onmouseover="changeImageOpacityGallery(0.5, 'row2')" onmouseout="changeImageOpacityGallery(1, 'row2')" routerLink="/analogue/jan23">
             
             <img src="assets/img/Jan23/img0000.webp" class="row2 imageHover" alt="Battersea Park statues">
@@ -58,13 +58,22 @@
               <img src="assets/img/june24/000255050024.webp" class="row0 imageHover" alt="Me in Portmeirion">
           </a>
 
-      </div>
+      </div> -->
 
 
       </div>
       <hr>
+      <div class="rowGallery" *ngIf="allInFormatDigital">
+        <div class="columnGallery" *ngFor="let month of allInFormatDigital;let index = index">
+            <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" routerLink={{month.route}}>
 
-    <div class="rowGallery">
+            <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" alt="underground" >
+
+        </a>
+        </div>
+
+      </div>
+    <!-- <div class="rowGallery">
         <div class="columnGalleryDigital">
             <a onmouseover="changeImageOpacityGallery(0.5, 'row5')" onmouseout="changeImageOpacityGallery(1, 'row5')" routerLink="/digital/wizard">
 
@@ -143,7 +152,7 @@
         </a>
         </div>
 
-      </div>
+      </div> -->
 
 
 </div>
