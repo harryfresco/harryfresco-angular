@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 import { DataService } from '../data.service';
 import { NgFor, NgIf, NgClass } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { filter, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-gallery',
-  imports: [RouterModule, NgIf, NgFor, NgClass],
+  imports: [RouterModule, NgIf, NgFor, NgClass, NgOptimizedImage],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.css'
 })
@@ -15,6 +16,7 @@ export class GalleryComponent {
   pageData: any = {};
   allInFormat: any={};
   allInFormatDigital: any={};
+  all;
   constructor(private dataService: DataService,
  public router: Router) {
 
@@ -25,10 +27,9 @@ export class GalleryComponent {
   ngOnInit(): void {
 
 
-        this.dataService.getSeperatedFormatData().subscribe((data) => {
-          this.allInFormat = data[0];
-          this.allInFormatDigital = data[1]
-          //console.log(this.pageData)
+        this.dataService.getAll().subscribe((data) => {
+          this.all=data
+          //console.log(this.all)
         });
 
 

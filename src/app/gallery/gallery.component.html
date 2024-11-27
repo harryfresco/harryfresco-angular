@@ -1,158 +1,18 @@
 <div class="container" >
-
-    <div class="rowGallery" *ngIf="allInFormat">
-        <div class="columnGallery" *ngFor="let month of allInFormat;let index = index">
+    <div class="row" *ngIf="all">
+        <div class="col columnGallery" *ngFor="let month of all;let index = index">
             <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" routerLink={{month.route}}>
 
             <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" alt="underground" >
-<!--             <img src="assets/img/June22/042480010036.webp" class="row3 imageHover" alt="B&W BBC Television Centre">
-            <img src="assets/img/June22/042480010028.webp" class="row3 imageHover" alt="B&W of me playing piano with a silly hat">
-            <img src="assets/img/June22/042480010009.webp" class="row3 imageHover" alt="B&W of a fake panda in Leicester Sq">
-            <img src="assets/img/June22/042480010014.webp" class="row3 imageHover" alt="B&W of London underground">
-            <img src="assets/img/June22/042480010037.webp" class="row3 imageHover" alt="B&W of BBC television centre">
-            <img src="assets/img/June22/042480010012~2.webp" class="row3 imageHover" alt="B&W of Leicester Square"> -->
+
         </a>
         </div>
-       <!--  <div class="columnGallery">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row2')" onmouseout="changeImageOpacityGallery(1, 'row2')" routerLink="/analogue/jan23">
-            
-            <img src="assets/img/Jan23/img0000.webp" class="row2 imageHover" alt="Battersea Park statues">
-            <img src="assets/img/Jan23/img0005.webp" class="row2 imageHover" alt="Battersea Power Station">
-            <img src="assets/img/Jan23/img0002.webp" class="row2 imageHover" alt="Family picture in Spitalfields Market">
-            <img src="assets/img/Jan23/img0018.webp" class="row2 imageHover" alt="Night picture of Buckhurt Hill">
-            <img src="assets/img/Jan23/img0008.webp" class="row2 imageHover" alt="Battersea Power Station through leaves">
-            <img src="assets/img/Jan23/img0035-sm.webp" class="row2 imageHover" alt="Building in White City">
-        </a>
-        </div>
-        <div class="columnGallery">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row4')" onmouseout="changeImageOpacityGallery(1, 'row4')" routerLink="/analogue/may23">
 
-            <img src="assets/img/May23/059610010030.webp" class="row4 imageHover" alt="Leaning Tower of Pisa">
-            <img src="assets/img/May23/059610010013.webp" class="row4 imageHover" alt="Greenwich">
-            <img src="assets/img/May23/059610010019.webp" class="row4 imageHover" alt="Picture of a couple in Italy">
-            <img src="assets/img/May23/059610010024.webp" class="row4 imageHover" alt="Street alleyway in Siena">
-            <img src="assets/img/May23/059610010027.webp" class="row4 imageHover" alt="Gathering on the street in Siena">
-            <img src="assets/img/May23/059610010005.webp" class="row4 imageHover" alt="Shushing the camera on Quiet Street">
-        </a>
-        </div>
-        <div class="columnGallery">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row1')" onmouseout="changeImageOpacityGallery(1, 'row1')" routerLink="/analogue/aug23">
-                <img src="assets/img/aug23/063800010030~2.webp" class="row1 imageHover" alt="Mirky image of the summit of Mount Snowden">
-                <img src="assets/img/aug23/Untitled-1-sm.webp" class="row1 imageHover" alt="The Village in Portmeirion">
-                <img src="assets/img/aug23/063800010013.webp" class="row1 imageHover" alt="Picture of me in Portmeirion">
-                <img src="assets/img/aug23/063800010023.webp" class="row1 imageHover" alt="Llanfairpwllgwyngyll train station">
-                <img src="assets/img/aug23/063800010029.webp" class="row1 imageHover" alt="Mount Snowden hills">
-                <img src="assets/img/aug23/Untitled-2-sm.webp" class="row1 imageHover" alt="Portmeirion Village">
-                <img src="assets/img/aug23/063800010034.webp" class="row1 imageHover" alt="Me in Portmeirion">
-            </a>
-
-        </div>
-        <div class="columnGallery">
-          <a onmouseover="changeImageOpacityGallery(0.5, 'row0')" onmouseout="changeImageOpacityGallery(1, 'row0')" routerLink="/analogue/june24">
-              <img src="assets/img/june24/000255050003.webp" class="row0 imageHover" alt="Mirky image of the summit of Mount Snowden">
-              <img src="assets/img/june24/Untitled-1 (1).webp" class="row0 imageHover" alt="The Village in Portmeirion">
-              <img src="assets/img/june24/000255050014.webp" class="row0 imageHover" alt="Picture of me in Portmeirion">
-              <img src="assets/img/june24/000255050017.webp" class="row0 imageHover" alt="Llanfairpwllgwyngyll train station">
-              <img src="assets/img/june24/000255050001.webp" class="row0 imageHover" alt="Portmeirion Village">
-              <img src="assets/img/june24/000255050009.webp" class="row0 imageHover" alt="Me in Portmeirion">
-              <img src="assets/img/june24/000255050024.webp" class="row0 imageHover" alt="Me in Portmeirion">
-          </a>
-
-      </div> -->
-
-
-      </div>
       <hr>
-      <div class="rowGallery" *ngIf="allInFormatDigital">
-        <div class="columnGallery" *ngFor="let month of allInFormatDigital;let index = index">
-            <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" routerLink={{month.route}}>
 
-            <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" alt="underground" >
-
-        </a>
-        </div>
 
       </div>
-    <!-- <div class="rowGallery">
-        <div class="columnGalleryDigital">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row5')" onmouseout="changeImageOpacityGallery(1, 'row5')" routerLink="/digital/wizard">
 
-                
-                    <img src="assets/digital/wizard/2024-0607-21435400-66658f3fde510.webp" class="row5 imageHover" alt="wizard set" loading="lazy">
-                 
-         
-                    <img src="assets/digital/wizard/2024-0608-01275500-66658f51083d5.webp" class="row5 imageHover" alt="les joy" loading="lazy">
-                 
-           
-                    <img src="assets/digital/wizard/2024-0607-21453600-66658f4573c9a.webp" class="row5 imageHover" alt="les joy"loading="lazy">
-                  
- 
-                    <img src="assets/digital/wizard/2024-0607-22593000-66658f4b26040.webp" class="row5 imageHover" alt=""loading="lazy">
-                  
-                 
-                    <img src="assets/digital/wizard/2024-0607-21452900-66658f3fae3ea.webp" class="row5 imageHover" alt="les joy"loading="lazy">
-             
-                 
-                    <img src="assets/digital/wizard/2024-0607-23410300-66658f4bb4367.webp" class="row5 imageHover" alt=""loading="lazy">
-                  
-                
-                    <img src="assets/digital/wizard/2024-0607-22553100-66658f46521ec.webp" class="row5 imageHover" alt=""loading="lazy">
-             </a>
-        </div>
-        <div class="columnGalleryDigital">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row6')" onmouseout="changeImageOpacityGallery(1, 'row6')" routerLink="/digital/june24d">
-            
-                <img src="assets/digital/june24/2024_0705_12485500.webp" class="row6 imageHover" alt="cheddar gorge"loading="lazy">
-                <img src="assets/digital/june24/Untitled-2.webp" class="row6 imageHover" alt="cheddar gorge"loading="lazy">
-              
-             
-                <img src="assets/digital/june24/2024_0622_12194300.webp" class="row6 imageHover" alt="concorde interior"loading="lazy">
-            
-                <img src="assets/digital/june24/Untitled-1.webp" class="row6 imageHover" alt="cheddar gorge"loading="lazy">
-             
-                <img src="assets/digital/june24/2024_0623_104446002.webp" class="row6 imageHover" alt="stokes croft"loading="lazy">
-            
-        </a>
-        </div>
-        <div class="columnGalleryDigital">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row7')" onmouseout="changeImageOpacityGallery(1, 'row7')" routerLink="/digital/japan">
-
-                <img src="assets/digital/japan/DSCF1865-2.webp" class="row7 imageHover" alt="miyajima island"loading="lazy">
-              
-                <img src="assets/digital/japan/DSCF2224.webp" class="row7 imageHover" alt="elevator in tokyo tower"loading="lazy">
-              
-                <img src="assets/digital/japan/Untitled-2.webp" class="row7 imageHover" alt="kyoto"loading="lazy">
-              
-                <img src="assets/digital/japan/karate.webp" class="row7 imageHover" alt="kyoto budo centre"loading="lazy">
-              
-                <img src="assets/digital/japan/DSCF1549.webp" class="row7 imageHover" alt="hiroshima"loading="lazy">
-               
-                <img src="assets/digital/japan/Untitled-1.webp" class="row7 imageHover" alt=""loading="lazy">
-               
-                <img src="assets/digital/japan/DSCF2244.webp" class="row7 imageHover" alt="view from tokyo tower"loading="lazy">
-                
-                <img src="assets/digital/japan/Untitled-5.webp" class="row7 imageHover" alt="kyoto"loading="lazy">
-              
-                <img src="assets/digital/japan/DSCF1198.webp" class="row7 imageHover" alt="budo centre"loading="lazy">
-               
-                <img src="assets/digital/japan/DSCF1207.webp" class="row7 imageHover" alt="budo centre"loading="lazy">
-             
-                <img src="assets/digital/japan/DSCF1170.webp" class="row7 imageHover" alt="budo centre"loading="lazy">
-        </a>
-        </div>
-        <div class="columnGalleryDigital">
-            <a onmouseover="changeImageOpacityGallery(0.5, 'row8')" onmouseout="changeImageOpacityGallery(1, 'row8')" routerLink="/digital/sky">
-            
-                <img src="assets/digital/sky/northernlightnb.webp" class="row8 imageHover" alt="northern lights"loading="lazy">
-                <img src="assets/digital/sky/lightningnb.webp" class="row8 imageHover" alt="lightning"loading="lazy">
-                <img src="assets/digital/sky/stars.webp" class="row8 imageHover" alt="stars"loading="lazy">
-                <img src="assets/digital/sky/lightning2nb.webp" class="row8 imageHover" alt="lightning"loading="lazy">
-             
-            
-        </a>
-        </div>
-
-      </div> -->
 
 
 </div>

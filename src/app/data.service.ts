@@ -41,6 +41,18 @@ export class DataService {
     );
 
   }
+  //Get all but omitting the keys
+  getAll(){
+    return this.http.get<any>('assets/data.json').pipe(
+      map(data => {        
+        const filteredData = Object.values(data)
+        // Initialize an empty object to accumulate the result
+
+        return filteredData;})  // Extract the page data based on the route i.e /aug23
+
+    );
+  }
+  // get all where the format is specified i.e /analogue
   getAllFromFormat(format: string){
     return this.http.get<any>('assets/data.json').pipe(
 
@@ -59,6 +71,7 @@ export class DataService {
 
     );
   }
+  // get one from xx
   getNavFromFormat(route: string): Observable<any> {
 
    
