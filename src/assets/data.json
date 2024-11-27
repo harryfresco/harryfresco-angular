@@ -4,6 +4,7 @@
         {
         "format":"analogue",
         "route":"/analogue/aug23",
+        "id":"aug23",
         "navbarTitle":"aug '23",
         "title":"the wales trip.",
         "desc":"again, this was Portra 400",
@@ -46,11 +47,108 @@
         ]
 
     },
-    "/analogue/test":
+    "/analogue/jan23":
         {
         "format":"analogue",
-        "route":"/analogue/aug23",
-        "navbarTitle":"aug 'test",
+        "route":"/analogue/jan23",
+        "id":"jan23",
+        "navbarTitle":"jan '23",
+        "title":"the long one.",
+        "desc":"I had this roll of film in the camera for months. I think it started around January and I got it developed in September-ish.",
+        "images":[
+            {
+                "imgTitle":"it's the mr bean episode!",
+                "imgDesc":"you know that bit in mr bean where his camera gets stolen? Yeah, this is it",
+                "imgPath":"assets/img/Jan23/img0000.webp"
+            },
+            {
+                "imgTitle":"Dogs/Pigs/Sheep",
+                "imgDesc":"three different ones...",
+                "imgPath":"assets/img/Jan23/img0005.webp"
+            },
+            {
+                "imgTitle":"random homeless gang",
+                "imgDesc":"found this lot on the street",
+                "imgPath":"assets/img/Jan23/img0002.webp"
+            },
+            {
+                "imgTitle":"buckhurst hill station",
+                "imgDesc":"somewhere on the central line",
+                "imgPath":"assets/img/Jan23/img0018.webp"
+            },
+            {
+                "imgTitle":"battersea again",
+                "imgDesc":"guess i was excited, idk",
+                "imgPath":"assets/img/Jan23/img0008.webp"
+            },
+            {
+                "imgTitle":"it's the last time",
+                "imgDesc":"i swear",
+                "imgPath":"assets/img/Jan23/img0006.webp"
+            },
+            {
+                "imgTitle":"no idea where this is",
+                "imgDesc":"i think somewhere in west london?",
+                "imgPath":"assets/img/Jan23/img0035.webp"
+            }
+        ]
+
+    }
+    ,
+    "/analogue/test1":
+        {
+        "format":"analogue",
+        "route":"/analogue/jan23",
+        "id":"jan23",
+        "navbarTitle":"jan 'test",
+        "title":"the wales trip.",
+        "desc":"again, this was Portra 400",
+        "images":[
+            {
+                "imgTitle":"mount snowden",
+                "imgDesc":"summit",
+                "imgPath":"assets/img/aug23/063800010030~2.webp"
+            },
+            {
+                "imgTitle":"portmeirion, wales",
+                "imgDesc":"the village.",
+                "imgPath":"assets/img/aug23/Untitled-1.webp"
+            },
+            {
+                "imgTitle":"charming fella.",
+                "imgDesc":"woah, who this?",
+                "imgPath":"assets/img/aug23/063800010013.webp"
+            },
+            {
+                "imgTitle":"",
+                "imgDesc":"",
+                "imgPath":"assets/img/aug23/063800010023.webp"
+            },
+            {
+                "imgTitle":"mount snowden",
+                "imgDesc":"snowdonia",
+                "imgPath":"assets/img/aug23/063800010029.webp"
+            },
+            {
+                "imgTitle":"the village",
+                "imgDesc":"who is number one?",
+                "imgPath":"assets/img/aug23/Untitled-2.webp"
+            },
+            {
+                "imgTitle":"i am not a number",
+                "imgDesc":"i am a free man",
+                "imgPath":"assets/img/aug23/063800010034.webp"
+            }
+        ]
+
+    }
+    ,
+    "/analogue/test2":
+        {
+        "format":"analogue",
+        "route":"/analogue/jan23",
+        "id":"jan23",
+        "navbarTitle":"jan 'test",
         "title":"the wales trip.",
         "desc":"again, this was Portra 400",
         "images":[

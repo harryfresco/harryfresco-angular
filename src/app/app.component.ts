@@ -12,6 +12,7 @@ import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { PhotoComponent } from "./photo/photo.component";
 import { DataService } from './data.service';
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NavbarDigitalComponent, NgIf, HeaderComponent, PhotoComponent],
@@ -44,12 +45,8 @@ export class AppComponent {
             this.dataService.getData(this.__URL).subscribe((data) => {
               this.pageData = data;
              // console.log(this.pageData)
+             
             });
-                        // Fetch data based on the 'route' from the JSON file
-                        this.dataService.getNav().subscribe((data) => {
-                          this.nav = data;
-                         console.log(this.nav)
-                        });
           }
     
       });

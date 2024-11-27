@@ -18,9 +18,9 @@ export class DataService {
     );
 
   }
-  getNav(): Observable<any> {
+  getNavFromFormat(route: string): Observable<any> {
     
-    const regex = new RegExp("/analogue/aug23", 'i');  // 'i' for case-insensitive search
+    //const regex = new RegExp("/analogue/aug23", 'i');  // 'i' for case-insensitive search
     // Fetch the entire JSON file
     return this.http.get<any>('assets/data.json').pipe(
 
@@ -29,13 +29,39 @@ export class DataService {
       const filteredData = Object.keys(data)
       .filter(key => key.startsWith('/analogue'))  // Match keys that start with '/analogue'
       .reduce((obj, key) => {
-        obj.push(data[key].navbarTitle);  // Add the matching key-value pairs to the result object
+        obj.push(data[key]);  // Add the matching key-value pairs to the result object
         return obj;
       }, []);  // Initialize an empty object to accumulate the result
       
     return filteredData;
 
       })
+
+    );
+
+  }
+  getNavTitleFromRoute(route: string): Observable<any> {
+    //console.log(route)
+    //const regex = new RegExp("/analogue/aug23", 'i');  // 'i' for case-insensitive search
+    // Fetch the entire JSON file
+    return this.http.get<any>('assets/data.json').pipe(
+
+     map(data => 
+
+/*       const filteredData = Object.keys(data)
+      .filter(key => key.startsWith(route))  // Match keys that start with '/analogue'
+      .reduce((obj, key) => {
+        obj=(data[key].navbarTitle);  // Add the matching key-value pairs to the result object
+       
+        //obj.route=data[key].route;
+        return obj;
+      });  // Initialize an empty object to accumulate the result
+      
+      console.log(filteredData)
+    return filteredData; */
+JSON.stringify(data[route].navbarTitle)
+      )
+    
 
     );
 
