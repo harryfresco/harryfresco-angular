@@ -19,24 +19,24 @@ export class DataService {
 
   }
   getNavFromFormat(route: string): Observable<any> {
-    
-    //const regex = new RegExp("/analogue/aug23", 'i');  // 'i' for case-insensitive search
-    // Fetch the entire JSON file
-  var url = route.split("/");
-  var page = "/"+url[1]
-  console.log(page)
+
+   
+
+    var url = route.split("/");
+    var page = "/" + url[1]
+    //console.log(page)
     return this.http.get<any>('assets/data.json').pipe(
 
-     map(data => {
+      map(data => {
 
-      const filteredData = Object.keys(data)
-      .filter(key => key.startsWith(page))  // Match keys that start with '/analogue'
-      .reduce((obj, key) => {
-        obj.push(data[key]);  // Add the matching key-value pairs to the result object
-        return obj;
-      }, []);  // Initialize an empty object to accumulate the result
-      
-    return filteredData;
+        const filteredData = Object.keys(data)
+          .filter(key => key.startsWith(page))  // Match keys that start with '/analogue'
+          .reduce((obj, key) => {
+            obj.push(data[key]);  // Add the matching key-value pairs to the result object
+            return obj;
+          }, []);  // Initialize an empty object to accumulate the result
+
+        return filteredData;
 
       })
 
@@ -44,27 +44,10 @@ export class DataService {
 
   }
   getNavTitleFromRoute(route: string): Observable<any> {
-    //console.log(route)
-    //const regex = new RegExp("/analogue/aug23", 'i');  // 'i' for case-insensitive search
-    // Fetch the entire JSON file
     return this.http.get<any>('assets/data.json').pipe(
 
-     map(data => 
+      map(data => JSON.stringify(data[route].navbarTitle))
 
-/*       const filteredData = Object.keys(data)
-      .filter(key => key.startsWith(route))  // Match keys that start with '/analogue'
-      .reduce((obj, key) => {
-        obj=(data[key].navbarTitle);  // Add the matching key-value pairs to the result object
-       
-        //obj.route=data[key].route;
-        return obj;
-      });  // Initialize an empty object to accumulate the result
-      
-      console.log(filteredData)
-    return filteredData; */
-JSON.stringify(data[route].navbarTitle)
-      )
-    
 
     );
 
