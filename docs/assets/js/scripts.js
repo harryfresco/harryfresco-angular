@@ -27,12 +27,14 @@ function changeNavLinks(page){
       links.classList.remove('desktopNavActive');
       links.style.visibility="visible";
       links.style.display="block";
-      let actives = document.querySelectorAll('a[routerLink*="' + page + '"]');
-    
+      let actives = document.querySelectorAll('a[href*="#' + page + '"]');
+  
+      
       actives.forEach(each => {
+        
       if(each.closest(".desktopNav")){
         each.classList.add('desktopNavActive');
-     
+        
       }
       else{
         
@@ -51,9 +53,8 @@ function changeNavLinks(page){
    
   
 }
-var path = window.location.pathname;
-var page = path.split("/").pop();
-changeNavLinks(page)
+
+
 function changeImageOpacityLanding(opacity) {
   const image = document.querySelector('.backgroundImage');
   image.style.opacity = opacity;
