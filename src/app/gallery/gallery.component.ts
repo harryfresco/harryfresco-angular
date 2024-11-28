@@ -4,6 +4,7 @@ import { DataService } from '../data.service';
 import { NgFor, NgIf, NgClass } from '@angular/common';
 import { NgOptimizedImage } from '@angular/common';
 import { filter, Subscription } from 'rxjs';
+import { LoadingService } from '../loading.service';
 
 @Component({
   selector: 'app-gallery',
@@ -18,7 +19,7 @@ export class GalleryComponent {
   allInFormatDigital: any={};
   all;
   constructor(private dataService: DataService,
- public router: Router) {
+ public router: Router,private loadingService: LoadingService) {
 
     // console.log(router.url); // This will print the current url
     this.__URL = this.router.url;
@@ -26,11 +27,13 @@ export class GalleryComponent {
   }
   ngOnInit(): void {
 
-
+     // Turn on the loading spinner
+     this.loadingService.loadingOn();
         this.dataService.getAll().subscribe((data) => {
           this.all=data
           //console.log(this.all)
-        });
+          this.loadingService.loadingOff();
+        } );
 
 
 

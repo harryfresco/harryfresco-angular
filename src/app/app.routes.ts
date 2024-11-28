@@ -1,16 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { June22Component } from './june22/june22.component';
-import { Jan23Component } from './jan23/jan23.component';
-import { May23Component } from './may23/may23.component';
-import { Aug23Component } from './aug23/aug23.component';
-import { June24Component } from './june24/june24.component';
 import { LandingComponent } from './landing/landing.component';
 import { ChooseComponent } from './choose/choose.component';
-import { WizardComponent } from './wizard/wizard.component';
-import { June24dComponent } from './june24d/june24d.component';
-import { JapanComponent } from './japan/japan.component';
-import { SkyComponent } from './sky/sky.component';
 import { PhotoComponent } from './photo/photo.component';
 
 export const routes: Routes = [

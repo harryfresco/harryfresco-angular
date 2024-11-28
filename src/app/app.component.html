@@ -1,6 +1,5 @@
 
-<app-loader 
-    [detectRouteTransitions]="true" />
+<app-loader />
 <app-navbar *ngIf="__URL.startsWith('/analogue/') || __URL.startsWith('/digital/')"></app-navbar>
 <app-header *ngIf="__URL.startsWith('/gallery')"></app-header>
 
