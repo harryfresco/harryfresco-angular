@@ -9,7 +9,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions"  *ngFor="let item of pageData.images;let index = index" [attr.data-bs-slide-to]="index" [ngClass]="{'active': index == 0}"></button>
         </div>
         <div class="carousel-inner">
-            <div class='carousel-item'   *ngFor="let item of pageData.images; let index = index;let isFirst = first"[ngClass]="{'active': index == 0}">
+            <div class='carousel-item' id="{{item.imgPath}}"  *ngFor="let item of pageData.images; let index = index;let isFirst = first"[ngClass]="{'active': index == 0}"onClick="fullscreen(this.id)">
               <img [src]="item.imgPath" class="d-block w-100" [alt]="item.imgTitle">
               <div class="carousel-caption d-none d-md-block">
                 <h5 [textContent]="item.imgTitle"></h5>
@@ -37,3 +37,4 @@
   
 
 </div>
+<div id="fullpage" onclick="this.style.display='none';"></div>

@@ -97,3 +97,11 @@ function changeImageOpacityLanding(opacity) {
     $('#fullscreen').hide();
     console.log("HI!")
   }) */
+
+
+
+function fullscreen(img){
+  const fullPage = document.querySelector('#fullpage');
+  fullPage.style.backgroundImage = 'url(' + img+ ')';
+    fullPage.style.display = 'block';
+}
