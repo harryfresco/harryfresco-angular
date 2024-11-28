@@ -5,6 +5,7 @@ import { NgFor, NgIf,NgClass} from '@angular/common';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { filter, Observable, Subscription } from 'rxjs';
+import { LoadingService } from '../loading.service';
 @Component({
   selector: 'app-photo',
   imports: [ NgIf, NgFor, NgClass],
@@ -17,30 +18,33 @@ export class PhotoComponent implements OnInit {
   __URL: string = '';
   constructor(
     private dataService: DataService,
-    private route: ActivatedRoute,private router: Router
-  ) {}
+    private route: ActivatedRoute,private router: Router,private loadingService: LoadingService
+  ) {    // console.log(router.url); // This will print the current url
+    this.__URL = this.router.url;}
 
   ngOnInit(): void {
-    console.log("hi")    
+    //console.log("hi")    
+     // Turn on the loading spinner
+     this.loadingService.loadingOn();
     // Subscribe to route changes
-    this.routeSubscription = this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd)) // Listen for NavigationEnd events
-      .subscribe((event: NavigationEnd) => {
-        // Get the current URL when navigation ends
-        this.__URL = event.urlAfterRedirects;
-        
+
+
 
 
           //const slug = params.get('route');
           if (this.__URL) {
-            console.log(this.__URL)
+            //console.log(this.__URL)
             // Fetch data based on the 'route' from the JSON file
-            this.dataService.getData(this.__URL).subscribe((data) => {
-              this.pageData = data;
-              console.log("hi")
+            this.dataService.getData(this.__URL).subscribe((data) => {  
+                      // Turn off the loading spinner
+                      this.pageData = data;
+        this.loadingService.loadingOff();
+ //console.log(data)
+       
+             
             });
           }
     
-      });
+   
   }
 }

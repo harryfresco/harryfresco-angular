@@ -11,19 +11,20 @@ import { WizardComponent } from './wizard/wizard.component';
 import { June24dComponent } from './june24d/june24d.component';
 import { JapanComponent } from './japan/japan.component';
 import { SkyComponent } from './sky/sky.component';
+import { PhotoComponent } from './photo/photo.component';
 
 export const routes: Routes = [
-    { path : 'analogue/june22', component: June22Component},
-    { path : 'analogue/jan23', component: Jan23Component},
-    { path : 'analogue/may23', component: May23Component, data: { title: 'Harry Fresco' }},
-    { path : 'analogue/aug23', component: Aug23Component},
-    { path : 'analogue/june24', component: June24Component},
+    { path : 'analogue/june22', component: PhotoComponent},
+    { path : 'analogue/jan23', component: PhotoComponent},
+    { path : 'analogue/may23', component: PhotoComponent, data: { title: 'Harry Fresco' }},
+    { path : 'analogue/aug23', component: PhotoComponent},
+    { path : 'analogue/june24', component: PhotoComponent},
     { path : 'landing', component: LandingComponent, data: { title: 'Harry Fresco' }},
     { path : 'choose', component: ChooseComponent, data: { title: 'Harry Fresco' }},
-    { path : 'digital/wizard', component: WizardComponent},
-    { path : 'digital/june24d', component: June24dComponent},
-    { path : 'digital/japan', component: JapanComponent},
-    { path : 'digital/sky', component: SkyComponent},
+    { path : 'digital/wizard', component: PhotoComponent},
+    { path : 'digital/june24d', component: PhotoComponent},
+    { path : 'digital/japan', component: PhotoComponent},
+    { path : 'digital/sky', component: PhotoComponent},
     { path : 'gallery', loadComponent:() => import('./gallery/gallery.component').then(m=>m.GalleryComponent)},
     { path: '', redirectTo: '/landing', pathMatch: 'full'},
     { path: '*', redirectTo: '/landing', pathMatch: 'full'},

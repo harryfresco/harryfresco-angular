@@ -10,11 +10,12 @@ import { filter } from 'rxjs/operators';
 import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-import { DataService } from './data.service'; 
+import { DataService } from './data.service';
+import { LoaderComponent } from "./loader/loader.component"; 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NgIf, HeaderComponent],
+  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NgIf, HeaderComponent, LoaderComponent],
   templateUrl: './app.component.html',
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   styleUrl: './app.component.css'
@@ -30,6 +31,7 @@ export class AppComponent {
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private location: Location, private dataService: DataService, private route: ActivatedRoute) {}
 
   ngOnInit() {
+    //console.log("Hello? Anyone?!")
     // Subscribe to route changes
     this.routeSubscription = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd)) // Listen for NavigationEnd events
