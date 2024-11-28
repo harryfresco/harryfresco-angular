@@ -351,22 +351,22 @@
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/sky/northernlightnb.webp"
+                "imgPath": "assets/digital/sky/fit/northernlights.webp"
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/sky/lightningnb.webp"
+                "imgPath": "assets/digital/sky/fit/lightning.webp"
             },
             {
                 "imgTitle": "stars",
                 "imgDesc": "this was with a LOT of light pollution.",
-                "imgPath": "assets/digital/sky/stars.webp"
+                "imgPath": "assets/digital/sky/fit/stars.webp"
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/sky/lightning2nb.webp"
+                "imgPath": "assets/digital/sky/fit/lightning2.webp"
             }
         ]
     }
