@@ -10,7 +10,7 @@ import { filter } from 'rxjs/operators';
 import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-import { DataService } from './data.service';
+import { DataService } from './data.service'; 
 
 @Component({
   selector: 'app-root',
@@ -20,7 +20,8 @@ import { DataService } from './data.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'harryfresco-angular';
+  
+
 
   private routeSubscription: Subscription = new Subscription(); // To hold the subscription
   __URL: string = '';
