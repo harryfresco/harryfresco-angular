@@ -21,6 +21,7 @@ export class PhotoComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    console.log("hi")    
     // Subscribe to route changes
     this.routeSubscription = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd)) // Listen for NavigationEnd events
@@ -32,10 +33,11 @@ export class PhotoComponent implements OnInit {
 
           //const slug = params.get('route');
           if (this.__URL) {
+            console.log(this.__URL)
             // Fetch data based on the 'route' from the JSON file
             this.dataService.getData(this.__URL).subscribe((data) => {
               this.pageData = data;
-             // console.log(this.pageData)
+              console.log("hi")
             });
           }
     

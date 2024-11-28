@@ -7,7 +7,7 @@ import { filter, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-gallery',
-  imports: [RouterModule, NgIf, NgFor, NgClass, NgOptimizedImage],
+  imports: [RouterModule, NgIf, NgFor],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.css'
 })

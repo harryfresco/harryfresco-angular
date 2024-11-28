@@ -7,13 +7,6 @@
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions"  *ngFor="let item of pageData.images;let index = index" [attr.data-bs-slide-to]="index" [ngClass]="{'active': index == 0}"></button>
-<!--           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button> -->
         </div>
         <div class="carousel-inner">
             <div class='carousel-item'   *ngFor="let item of pageData.images; let index = index;let isFirst = first"[ngClass]="{'active': index == 0}">
@@ -24,57 +17,6 @@
               </div>
             </div>
           </div>
-<!--         <di    v class="carousel-inner" >
-          <div class="carousel-item active">
-            <img id="firstImg" src="assets/img/aug23/063800010030~2.webp" class="d-block w-100" alt="Mirky image of the summit of Mount Snowden">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>mount snowden</h5>
-              <p style="color: aliceblue;">summit</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/aug23/Untitled-1.webp" class="d-block w-100" alt="The Village in Portmeirion">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>portmeirion, wales</h5>
-              <p style="color: white;">the village.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/aug23/063800010013.webp" class="d-block w-100" alt="Picture of me in Portmeirion">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>charming fella.</h5>
-              <p style="color: white;">woah, who this?</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/aug23/063800010023.webp" class="d-block w-100" alt="Llanfairpwllgwyngyll train station">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white;"></h5>
-              <p style="color: white;"></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/aug23/063800010029.webp" class="d-block w-100" alt="Mount Snowden hills">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>mount snowden</h5>
-                <p style="color: white;">snowdonia</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/aug23/Untitled-2.webp" class="d-block w-100" alt="Portmeirion Village">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>the village</h5>
-                <p style="color: white;">who is number one?</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/aug23/063800010034.webp" class="d-block w-100" alt="Me in Portmeirion">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>i am not a number</h5>
-                <p style="color: white;">i am a free man</p>
-            </div>
-          </div>
-        </div> -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>

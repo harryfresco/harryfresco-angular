@@ -3,19 +3,18 @@ import { NgFor, NgIf, AsyncPipe, Location} from '@angular/common';
 import { ActivatedRoute, Router, RouterOutlet, RouterModule, NavigationEnd } from '@angular/router';
 import { provideRouter, Route, RouterLink } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
-import { NavbarDigitalComponent } from "./navbar-digital/navbar-digital.component";
 import { FooterComponent } from "./footer/footer.component";
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { PhotoComponent } from "./photo/photo.component";
+
 import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NavbarDigitalComponent, NgIf, HeaderComponent, PhotoComponent],
+  imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NgIf, HeaderComponent],
   templateUrl: './app.component.html',
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   styleUrl: './app.component.css'
