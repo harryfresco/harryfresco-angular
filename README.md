@@ -23,7 +23,9 @@ Copy index.html and rename the copy to 404.html
 Make sure CNAME with harryfresco.co.uk is at the same level as index.html
 Then commit and push to Git
 
+## OR use the build script
 
+Run buildScrip.sh to do the above steps for you
 
 ## Code scaffolding
 
