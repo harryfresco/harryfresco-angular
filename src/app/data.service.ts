@@ -10,14 +10,16 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
+  //Fetch one month based on format/route i.e "/digital/japan"
   getData(route: string): Observable<any> {
-    // Fetch the entire JSON file
+    
     return this.http.get<any>('assets/data.json').pipe(
       map(data => data[route])  // Extract the page data based on the route i.e /aug23
 
     );
 
   }
+  // NOT USED ATM
   getSeperatedFormatData(): Observable<any> {
     let analogue=[]
     let digital = []
@@ -41,7 +43,7 @@ export class DataService {
     );
 
   }
-  //Get all but omitting the keys
+  //Get all data from data.json
   getAll(){
     return this.http.get<any>('assets/data.json').pipe(
       map(data => {        
@@ -52,7 +54,7 @@ export class DataService {
 
     );
   }
-  // get all where the format is specified i.e /analogue
+  // NOT USED ATM - get all where the format is specified i.e /analogue
   getAllFromFormat(format: string){
     return this.http.get<any>('assets/data.json').pipe(
 
@@ -71,7 +73,7 @@ export class DataService {
 
     );
   }
-  // get one from xx
+  // get all months that match the format from the url "/digital/japan"
   getNavFromFormat(route: string): Observable<any> {
 
    
@@ -97,6 +99,7 @@ export class DataService {
     );
 
   }
+  //NOT USED ATM
   getNavTitleFromRoute(route: string): Observable<any> {
     return this.http.get<any>('assets/data.json').pipe(
 

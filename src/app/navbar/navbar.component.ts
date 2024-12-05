@@ -27,13 +27,13 @@ export class NavbarComponent {
 
   ngOnInit(): void {    
 
-    //const slug = params.get('route');
+
     if (this.__URL) {
-      //get pages based on url
+      //get all pages based on url "/digital/**"
       this.dataService.getNavFromFormat(this.__URL).subscribe((data) => {
 
         this.nav = data;
-        //console.log(this.__URL)
+       // console.log(data)
       });
 
 
