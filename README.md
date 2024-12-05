@@ -20,6 +20,7 @@ ng build --base-href="https://harryfresco.co.uk/"
 ```
 Then, copy contents of browser folder up a level, to sit in docs
 Copy index.html and rename the copy to 404.html
+Make sure CNAME with harryfresco.co.uk is at the same level as index.html
 Then commit and push to Git
 
 
