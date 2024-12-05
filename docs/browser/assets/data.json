@@ -369,5 +369,50 @@
                 "imgPath": "assets/digital/sky/fit/lightning2.webp"
             }
         ]
+    },
+    "/digital/nov24": {
+        "format": "digital",
+        "route": "/digital/nov24",
+        "id": "nov '24",
+        "navbarTitle": "nov '24",
+        "title": "november 2024.",
+        "desc": "this mostly consisted of a violent ice hockey game, and the release party of Les Joy's song Needle In The Hay",
+        "images": [
+            {
+                "imgTitle": "Les Joy",
+                "imgDesc": "at The Louisiana",
+                "imgPath": "assets/digital/nov24/lesjoy2.webp"
+            },
+            {
+                "imgTitle": "Hockey Fight",
+                "imgDesc": "",
+                "imgPath": "assets/digital/nov24/hockey.webp"
+            },
+            {
+                "imgTitle": "Les Joy",
+                "imgDesc": "at The Louisiana",
+                "imgPath": "assets/digital/nov24/lesjoy.webp"
+            },
+            {
+                "imgTitle": "Ice Hockey Goalie",
+                "imgDesc": "",
+                "imgPath": "assets/digital/nov24/hockey2.webp"
+            },
+            {
+                "imgTitle": "Les Joy",
+                "imgDesc": "at The Louisiana",
+                "imgPath": "assets/digital/nov24/lesjoy4.webp"
+            },
+            {
+                "imgTitle": "Ice Hockey",
+                "imgDesc": "",
+                "imgPath": "assets/digital/nov24/hockey3.webp"
+            },
+            {
+                "imgTitle": "Les Joy",
+                "imgDesc": "at The Louisiana",
+                "imgPath": "assets/digital/nov24/lesjoy3.webp"
+            }
+        ]
     }
 }
