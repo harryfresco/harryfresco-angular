@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { ChooseComponent } from './choose/choose.component';
 import { PhotoComponent } from './photo/photo.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
     { path : 'analogue/june22', component: PhotoComponent, title: 'Harry Fresco | June 22' },
@@ -15,9 +16,10 @@ export const routes: Routes = [
     { path : 'digital/wizard', component: PhotoComponent, title: 'Harry Fresco | Wizard'},
     { path : 'digital/june24d', component: PhotoComponent, title: 'Harry Fresco | June 24'},
     { path : 'digital/japan', component: PhotoComponent, title: 'Harry Fresco | Japan'},
-    { path : 'digital/sky', component: PhotoComponent, title: 'Harry Fresco | Sky'},,
+    { path : 'digital/sky', component: PhotoComponent, title: 'Harry Fresco | Sky'},
     { path : 'digital/nov24', component: PhotoComponent, title: 'Harry Fresco | Nov 24'},
     { path : 'gallery', loadComponent:() => import('./gallery/gallery.component').then(m=>m.GalleryComponent), title: 'Harry Fresco | Gallery'},
+    { path : 'about', component: AboutComponent, title: 'Harry Fresco | About'},
     { path: '', redirectTo: '/landing', pathMatch: 'full'},
     { path: '*', redirectTo: '/landing', pathMatch: 'full'},
    /* { path: '', redirectTo: '/home', pathMatch: 'full' },

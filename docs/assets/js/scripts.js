@@ -1,7 +1,7 @@
 function showMusic() {
 
     let musicDiv = document.getElementById('musicContainer');
-    musicDiv.innerHTML="<audio controls id='music' class='musicText' style='visibility: hidden; position:relative'><source src='../media/gallery.mp3' type='audio/mpeg'> Your browser does not support the audio element.</audio>";
+    musicDiv.innerHTML="<audio controls id='music' class='musicText' style='visibility: hidden; position:relative'><source src='assets/media/gallery.mp3' type='audio/mpeg'> Your browser does not support the audio element.</audio>";
     let music = document.getElementById("music")
     music.play();
     music.style.visibility="visible";
