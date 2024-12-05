@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { NgFor, NgIf, AsyncPipe, Location} from '@angular/common';
+import { NgIf, Location} from '@angular/common';
 import { ActivatedRoute, Router, RouterOutlet, RouterModule, NavigationEnd } from '@angular/router';
-import { provideRouter, Route, RouterLink } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { FooterComponent } from "./footer/footer.component";
 import { CommonModule } from '@angular/common';

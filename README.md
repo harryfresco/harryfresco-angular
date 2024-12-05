@@ -16,7 +16,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ## To Build and Deploy
 
 ```bash
-ng build --base-href="https://harryfresco.github.io/harryfresco-angular/"
+ng build --base-href="https://harryfresco.co.uk/"
 ```
 Then, copy contents of browser folder up a level, to sit in docs
 Copy index.html and rename the copy to 404.html

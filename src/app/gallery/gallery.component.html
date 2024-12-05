@@ -3,7 +3,7 @@
         <div class="col columnGallery" *ngFor="let month of all;let index = index">
             <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" routerLink={{month.route}}>
 
-            <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" alt="underground" >
+            <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" [alt]="img.imgTitle" >
 
         </a>
         </div>
