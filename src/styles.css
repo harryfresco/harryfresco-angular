@@ -1013,3 +1013,10 @@ color: black;
     background-position: center center;
     background-color:#00000083
   }
+
+  .dark{
+    filter: invert(1) grayscale(100);
+  }
+  .darkText{
+    color:#313131 !important;
+  }

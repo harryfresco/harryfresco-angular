@@ -15,12 +15,14 @@
             {
                 "imgTitle": "the scandal appreciation company",
                 "imgDesc": "can't put anything polictical in this description, sorry.",
-                "imgPath": "assets/img/June22/042480010036.webp"
+                "imgPath": "assets/img/June22/042480010036.webp",
+                "darkText":true
             },
             {
                 "imgTitle": "charming fella.",
                 "imgDesc": "FREEBIRD!",
-                "imgPath": "assets/img/June22/042480010028.webp"
+                "imgPath": "assets/img/June22/042480010028.webp",
+                "darkText":true
             },
             {
                 "imgTitle": "",
@@ -30,12 +32,14 @@
             {
                 "imgTitle": "underground again",
                 "imgDesc": "guess i was excited, idk",
-                "imgPath": "assets/img/June22/042480010014.webp"
+                "imgPath": "assets/img/June22/042480010014.webp",
+                "darkText":true
             },
             {
                 "imgTitle": "this place again.",
                 "imgDesc": "guess i was excited, idk",
-                "imgPath": "assets/img/June22/042480010037.webp"
+                "imgPath": "assets/img/June22/042480010037.webp",
+                "darkText":true
             },
             {
                 "imgTitle": "london town",
@@ -55,7 +59,8 @@
             {
                 "imgTitle": "it's the mr bean episode!",
                 "imgDesc": "you know that bit in mr bean where his camera gets stolen? Yeah, this is it",
-                "imgPath": "assets/img/Jan23/img0000.webp"
+                "imgPath": "assets/img/Jan23/img0000.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "Dogs/Pigs/Sheep",
@@ -100,22 +105,26 @@
             {
                 "imgTitle": "no idea where this is",
                 "imgDesc": "i think somewhere in west london?",
-                "imgPath": "assets/img/May23/059610010030.webp"
+                "imgPath": "assets/img/May23/059610010030.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "greenwich",
                 "imgDesc": "",
-                "imgPath": "assets/img/May23/059610010013.webp"
+                "imgPath": "assets/img/May23/059610010013.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "southend-on-sea",
                 "imgDesc": "",
-                "imgPath": "assets/img/May23/059610010014.webp"
+                "imgPath": "assets/img/May23/059610010014.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "siena, italy",
                 "imgDesc": "",
-                "imgPath": "assets/img/May23/059610010019.webp"
+                "imgPath": "assets/img/May23/059610010019.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "siena, italy",
@@ -125,12 +134,15 @@
             {
                 "imgTitle": "siena, italy",
                 "imgDesc": "some revolution or summat",
-                "imgPath": "assets/img/May23/059610010027.webp"
+                "imgPath": "assets/img/May23/059610010027.webp",
+                "darkButtons":true,
+                "darkText":true
             },
             {
                 "imgTitle": "quiet street",
                 "imgDesc": "bath, somerset",
-                "imgPath": "assets/img/May23/059610010005.webp"
+                "imgPath": "assets/img/May23/059610010005.webp",
+                "darkButtons":true
             }
         ]
     },
@@ -150,7 +162,8 @@
             {
                 "imgTitle": "portmeirion, wales",
                 "imgDesc": "the village.",
-                "imgPath": "assets/img/aug23/Untitled-1.webp"
+                "imgPath": "assets/img/aug23/Untitled-1.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "charming fella.",
@@ -170,12 +183,15 @@
             {
                 "imgTitle": "the village",
                 "imgDesc": "who is number one?",
-                "imgPath": "assets/img/aug23/Untitled-2.webp"
+                "imgPath": "assets/img/aug23/Untitled-2.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "i am not a number",
                 "imgDesc": "i am a free man",
-                "imgPath": "assets/img/aug23/063800010034.webp"
+                "imgPath": "assets/img/aug23/063800010034.webp",
+                "darkButtons":true,
+                "darkText":true
             }
         ]
     },
@@ -195,12 +211,14 @@
             {
                 "imgTitle": "an old mans bum",
                 "imgDesc": "",
-                "imgPath": "assets/img/june24/Untitled-1 (1).webp"
+                "imgPath": "assets/img/june24/Untitled-1 (1).webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "wacky fish-eye lens",
                 "imgDesc": "got the lens from a charity shop for a fiver",
-                "imgPath": "assets/img/june24/000255050014.webp"
+                "imgPath": "assets/img/june24/000255050014.webp",
+                "darkText":true
             },
             {
                 "imgTitle": "bristol beacon",
@@ -210,7 +228,9 @@
             {
                 "imgTitle": "haunted",
                 "imgDesc": "i did not take this picture. who is this?",
-                "imgPath": "assets/img/june24/000255050023.webp"
+                "imgPath": "assets/img/june24/000255050023.webp",
+                "darkButtons":true,
+                "darkText":true
             },
             {
                 "imgTitle": "clifton suspension bridge",
@@ -219,14 +239,18 @@
             },
             {
                 "imgTitle": "couple + concorde",
-                "imgDesc": "i am a free man",
-                "imgPath": "assets/img/june24/000255050009.webp"
+                "imgDesc": "",
+                "imgPath": "assets/img/june24/000255050009.webp",   
+                "darkText":true
             },
             {
                 "imgTitle": "haunted 2",
                 "imgDesc": "i don't know how this was on the film",
-                "imgPath": "assets/img/june24/000255050024.webp"
+                "imgPath": "assets/img/june24/000255050024.webp",
+                "darkButtons":true,
+                "darkText":true
             }
+            
         ]
     },
     "/digital/wizard": {
@@ -238,8 +262,8 @@
         "desc": "first day with the fujifilm x-t20 with the 27mm 'pancake lens' <br> an amazing day for the release of Les Joy's single 'Wizard', and also a showcase for other great musicians. <br> go <a href='https://www.instagram.com/lesjoymusic/'>follow</a> and listen to Les Joy NOW!",
         "images": [
             {
-                "imgTitle": "underground",
-                "imgDesc": "a rare shot of a non-strike day",
+                "imgTitle": "",
+                "imgDesc": "",
                 "imgPath": "assets/digital/wizard/2024-0607-21435400-66658f3fde510.webp"
             },
             {
@@ -250,17 +274,20 @@
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/wizard/2024-0607-21453600-66658f4573c9a.webp"
+                "imgPath": "assets/digital/wizard/2024-0607-21453600-66658f4573c9a.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/wizard/2024-0607-22593000-66658f4b26040.webp"
+                "imgPath": "assets/digital/wizard/2024-0607-22593000-66658f4b26040.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/wizard/2024-0607-21452900-66658f3fae3ea.webp"
+                "imgPath": "assets/digital/wizard/2024-0607-21452900-66658f3fae3ea.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "",
@@ -286,7 +313,8 @@
             {
                 "imgTitle": "miyajima island",
                 "imgDesc": "",
-                "imgPath": "assets/digital/japan/DSCF1865-2.webp"
+                "imgPath": "assets/digital/japan/DSCF1865-2.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "tokyo tower",
@@ -296,7 +324,8 @@
             {
                 "imgTitle": "kyoto",
                 "imgDesc": "temple",
-                "imgPath": "assets/digital/japan/Untitled-2.webp"
+                "imgPath": "assets/digital/japan/Untitled-2.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "Kyoto Budo Centre",
@@ -306,12 +335,14 @@
             {
                 "imgTitle": "hiroshima",
                 "imgDesc": "the building at the hypocentre of the A-Bomb",
-                "imgPath": "assets/digital/japan/DSCF1549.webp"
+                "imgPath": "assets/digital/japan/DSCF1549.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "hakone",
                 "imgDesc": "",
-                "imgPath": "assets/digital/japan/Untitled-1.webp"
+                "imgPath": "assets/digital/japan/Untitled-1.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "tokyo",
@@ -321,7 +352,8 @@
             {
                 "imgTitle": "kyoto",
                 "imgDesc": "",
-                "imgPath": "assets/digital/japan/Untitled-5.webp"
+                "imgPath": "assets/digital/japan/Untitled-5.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "kyoto budo centre",
@@ -351,22 +383,26 @@
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/sky/fit/northernlights.webp"
+                "imgPath": "assets/digital/sky/fit/northernlights.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/sky/fit/lightning.webp"
+                "imgPath": "assets/digital/sky/fit/lightning.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "stars",
                 "imgDesc": "this was with a LOT of light pollution.",
-                "imgPath": "assets/digital/sky/fit/stars.webp"
+                "imgPath": "assets/digital/sky/fit/stars.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/sky/fit/lightning2.webp"
+                "imgPath": "assets/digital/sky/fit/lightning2.webp",
+                "darkButtons":true 
             }
         ]
     },
@@ -386,7 +422,9 @@
             {
                 "imgTitle": "Hockey Fight",
                 "imgDesc": "",
-                "imgPath": "assets/digital/nov24/hockey.webp"
+                "imgPath": "assets/digital/nov24/hockey.webp",
+                "darkButtons":true,
+                "darkText":true
             },
             {
                 "imgTitle": "Les Joy",
@@ -396,22 +434,28 @@
             {
                 "imgTitle": "Ice Hockey Goalie",
                 "imgDesc": "",
-                "imgPath": "assets/digital/nov24/hockey2.webp"
+                "imgPath": "assets/digital/nov24/hockey2.webp",
+                "darkButtons":true,
+                "darkText":true
             },
             {
                 "imgTitle": "Les Joy",
                 "imgDesc": "at The Louisiana",
-                "imgPath": "assets/digital/nov24/lesjoy4.webp"
+                "imgPath": "assets/digital/nov24/lesjoy4.webp",
+                "darkButtons":true
             },
             {
                 "imgTitle": "Ice Hockey",
                 "imgDesc": "",
-                "imgPath": "assets/digital/nov24/hockey3.webp"
+                "imgPath": "assets/digital/nov24/hockey3.webp",
+                "darkButtons":true,
+                "darkText":true
             },
             {
                 "imgTitle": "Les Joy",
                 "imgDesc": "at The Louisiana",
-                "imgPath": "assets/digital/nov24/lesjoy3.webp"
+                "imgPath": "assets/digital/nov24/lesjoy3.webp",
+                "darkButtons":true
             }
         ]
     }

@@ -4,27 +4,30 @@
         <p class="galleryDesc" [innerHTML]="pageData.desc"></p>
     </div>
     <div class="row">
+      <!-- [attr.data-bs-theme]="item.dark ? 'dark' : null" -->
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions"  *ngFor="let item of pageData.images;let index = index" [attr.data-bs-slide-to]="index" [ngClass]="{'active': index == 0}"></button>
         </div>
         <div class="carousel-inner">
-            <div class='carousel-item' id="{{item.imgPath}}"  *ngFor="let item of pageData.images; let index = index;let isFirst = first"[ngClass]="{'active': index == 0}"onClick="fullscreen(this.id)">
-              <img [src]="item.imgPath" class="d-block w-100" [alt]="item.imgTitle">
+            <div class='carousel-item'   *ngFor="let item of pageData.images; let index = index;let isFirst = first"[ngClass]="{'active': index == 0}"  >
+              <button class="carousel-control-prev"[ngClass]="{'dark':item.darkButtons==true}" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next"[ngClass]="{'dark':item.darkButtons==true}" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <img id="{{item.imgPath}}" [src]="item.imgPath" class="d-block w-100" [alt]="item.imgTitle"onClick="fullscreen(this.id)">
               <div class="carousel-caption d-none d-md-block">
-                <h5 [textContent]="item.imgTitle"></h5>
-                <p [textContent]="item.imgDesc" style="color: aliceblue;"></p>
+                <h5 [textContent]="item.imgTitle"[ngClass]="{'darkText':item.darkText==true}"></h5>
+                <p [textContent]="item.imgDesc" style="color: aliceblue;"[ngClass]="{'darkText':item.darkText==true}"></p>
               </div>
+              
             </div>
           </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
       </div>
 </div>
 
