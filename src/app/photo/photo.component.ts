@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { filter, Observable, Subscription } from 'rxjs';
 import { LoadingService } from '../loading.service';
+import * as $ from "jquery";
 @Component({
   selector: 'app-photo',
   imports: [ NgIf, NgFor, NgClass, NgOptimizedImage],

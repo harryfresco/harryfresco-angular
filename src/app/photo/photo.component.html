@@ -1,7 +1,7 @@
 <div class="container affectedByLoad" *ngIf="pageData">
     <div class="row">
         <h1 class="galleryTitle">{{ pageData.title }}</h1>
-        <p class="galleryDesc">{{ pageData.desc }}</p>
+        <p class="galleryDesc" [innerHTML]="pageData.desc"></p>
     </div>
     <div class="row">
     <div id="carouselExampleCaptions" class="carousel slide">

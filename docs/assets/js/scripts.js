@@ -105,3 +105,25 @@ function fullscreen(img){
   fullPage.style.backgroundImage = 'url(' + img+ ')';
     fullPage.style.display = 'block';
 }
+
+/* $('.carousel').on('touchstart', function(event){
+  console.log("touch")
+  const xClick = event.originalEvent.touches[0].pageX;
+  $(this).one('touchmove', function(event){
+      const xMove = event.originalEvent.touches[0].pageX;
+      const sensitivityInPx = 5;
+
+      if( Math.floor(xClick - xMove) > sensitivityInPx ){
+          $(this).carousel('next');
+      }
+      else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+          $(this).carousel('prev');
+      }
+  });
+  $(this).on('touchend', function(){
+      $(this).off('touchmove');
+  });
+}); */
+
+/* var myCarousel = document.querySelector('.carousel')
+var carousel = new bootstrap.Carousel(myCarousel) */

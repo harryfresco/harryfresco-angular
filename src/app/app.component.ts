@@ -11,7 +11,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { DataService } from './data.service';
 import { LoaderComponent } from "./loader/loader.component"; 
-
+import * as $ from "jquery";
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterModule, NavbarComponent, FooterComponent, CommonModule, NgIf, HeaderComponent, LoaderComponent],
