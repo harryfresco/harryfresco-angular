@@ -1020,3 +1020,36 @@ color: black;
   .darkText{
     color:#313131 !important;
   }
+#notfoundmobile{
+  width: 100vw;
+}
+  #notfoundlarge{
+height: 95vh;
+  }
+  @media (max-width: 1439px) {
+  #notfoundlarge{
+height: auto;
+width: 100vw;
+  }
+  }
+ /* Media query for devices with screen width 768px or larger */
+@media (min-width: 630px) {
+  /* Hide mobile image and show desktop image */
+  #notfoundmobile {
+    display: none;
+  }
+
+  #notfoundlarge {
+    display: block;
+  }
+}
+@media (max-width: 629px) {
+  /* Hide mobile image and show desktop image */
+  #notfoundmobile {
+    display: block;
+  }
+
+  #notfoundlarge {
+    display: none;
+  }
+}
