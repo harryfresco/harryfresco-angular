@@ -407,6 +407,11 @@ p{
     max-width: 20%;
     padding: 0 4px;
   }
+  .columnGalleryMonth {
+    flex: 50%;
+    max-width: 50%;
+    padding: 4px;
+  }
   
   .columnGallery img {
     margin-top: 8px;
@@ -425,6 +430,20 @@ p{
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .columnGallery {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .columnGalleryMonth {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .columnGalleryMonth {
       flex: 100%;
       max-width: 100%;
     }
@@ -1052,4 +1071,33 @@ width: 100vw;
   #notfoundlarge {
     display: none;
   }
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d6d8c9;
+}
+.columnGalleryMonth{
+  position: relative;
+}
+.columnGalleryMonth:hover .overlay{
+opacity: 0.8;
+}
+.overlayText{
+ color: #272727;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

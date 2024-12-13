@@ -1,10 +1,48 @@
 <div class="container affectedByLoad" *ngIf="pageData">
+  <div class="row">
+      <h1 class="galleryTitle">{{ pageData.title }}</h1>
+      <p class="galleryDesc" [innerHTML]="pageData.desc"></p>
+  </div>
+  <div class="row">
+    <!-- [attr.data-bs-theme]="item.dark ? 'dark' : null" -->
+
+     
+          <div   *ngFor="let item of pageData.images; let index = index;" class="col columnGalleryMonth" >
+            <img id="{{item.imgPath}}" [src]="item.imgPath" class="d-block w-100" [alt]="item.imgTitle"onClick="fullscreen(this.id)">
+            <div class="overlay"id="{{item.imgPath}}"onClick="fullscreen(this.id)">
+              <div class="overlayText">
+                 <h5 [textContent]="item.imgTitle"></h5>
+             <p [textContent]="item.imgDesc"  ></p>
+              </div>
+             
+           </div>
+           
+
+             
+           
+
+  
+
+    </div>
+</div>
+
+      
+        <div id="footer-placeholder">
+
+        </div>
+ 
+
+
+
+</div>
+
+<!-- <div class="container affectedByLoad" *ngIf="pageData">
     <div class="row">
         <h1 class="galleryTitle">{{ pageData.title }}</h1>
         <p class="galleryDesc" [innerHTML]="pageData.desc"></p>
     </div>
     <div class="row">
-      <!-- [attr.data-bs-theme]="item.dark ? 'dark' : null" -->
+      
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions"  *ngFor="let item of pageData.images;let index = index" [attr.data-bs-slide-to]="index" [ngClass]="{'active': index == 0}"></button>
@@ -39,5 +77,5 @@
  
   
 
-</div>
+</div> -->
 <div id="fullpage" onclick="this.style.display='none';"></div>
