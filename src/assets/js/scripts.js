@@ -54,6 +54,13 @@ function changeNavLinks(page){
   
 }
 
+function setNavLink(){
+    var path = window.location.pathname;
+    //console.log(path)
+    changeNavLinks(path)
+}
+//window.onload(setNavLink())
+
 
 function changeImageOpacityLanding(opacity) {
   const image = document.querySelector('.backgroundImage');

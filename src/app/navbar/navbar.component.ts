@@ -3,7 +3,7 @@ import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/ro
 import { CommonModule } from '@angular/common';
 import { filter, Subscription } from 'rxjs';
 import { DataService } from '../data.service';
-declare function myFunction(): void;
+declare function setNavLink(): void;
 import { NgFor, NgIf, NgClass } from '@angular/common';
 
 declare function makeLinksActive(): void;
@@ -41,7 +41,10 @@ export class NavbarComponent {
 
 
   }
+  ngAfterViewInit() {
 
+    setNavLink(); // Call the JavaScript function
+  }
 
 
 

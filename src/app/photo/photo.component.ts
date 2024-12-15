@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { DataService } from '../data.service';
 import { NgFor, NgIf,NgClass, NgOptimizedImage} from '@angular/common';
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { filter, Observable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { LoadingService } from '../loading.service';
 import * as $ from "jquery";
 @Component({
   selector: 'app-photo',
-  imports: [ NgIf, NgFor, NgClass, NgOptimizedImage],
+  imports: [ NgIf, NgFor],
   templateUrl: './photo.component.html',
   styleUrl: './photo.component.css'
 })

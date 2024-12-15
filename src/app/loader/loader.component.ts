@@ -1,4 +1,4 @@
-import { AsyncPipe, NgIf, NgTemplateOutlet } from '@angular/common';
+import { AsyncPipe} from '@angular/common';
 import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd } from '@angular/router';
 import { Observable, tap } from 'rxjs';
@@ -6,7 +6,7 @@ import { LoadingService } from '../loading.service';
 
 @Component({
   selector: 'app-loader',
-  imports: [ AsyncPipe, NgIf, NgTemplateOutlet],
+  imports: [ AsyncPipe],
   templateUrl: './loader.component.html',
   styleUrl: './loader.component.css'
 })

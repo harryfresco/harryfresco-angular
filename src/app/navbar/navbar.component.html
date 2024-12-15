@@ -6,11 +6,11 @@
 
 
   <!-- Top Navigation Menu -->
-  <div class="topnav">
-    <a class="active navbarText mobileTitle" id="title" >Harry Fresco</a>
+  <div class="topnav" onload="setNavLink()">
+    <a class="active navbarText mobileTitle" id="title" >{{nav.__URL}}</a>
     <div id="myLinks">
       <div *ngFor="let item of nav;let index = index">
-        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)">{{ item.navbarTitle }}</a>
+        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)" routerLinkActive="active">{{ item.navbarTitle }}</a>
         <!-- <a class="navbarText" routerLink="/analogue/jan23"onClick="changeNavLinks('jan23')">jan '23</a>
         <a class="navbarText rainbowText" routerLink="/analogue/may23"onClick="changeNavLinks('may23')">may '23</a>
         <a class="navbarText rainbowText" routerLink="/analogue/aug23"onClick="changeNavLinks('aug23')">aug '23</a>
@@ -33,7 +33,7 @@
   <div class="row desktopNav">
     <div *ngFor="let item of nav;let index = index" class="col" style="text-align: center;">
       
-        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)">{{ item.navbarTitle }}</a>
+        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)" routerLinkActive="desktopNavActive">{{ item.navbarTitle }}</a>
     
     </div>
 
