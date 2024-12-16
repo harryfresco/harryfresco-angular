@@ -109,10 +109,10 @@ function changeImageOpacityLanding(opacity) {
 
 function fullscreen(img){
   const fullPage = document.querySelector('#fullpage');
-
+  fullPage.style.display = 'block';
 img = img.substr(0, img.lastIndexOf(".")) + ".webp";
   fullPage.style.backgroundImage = 'url(' + img+ ')';
-    fullPage.style.display = 'block';
+
 }
 
 /* $('.carousel').on('touchstart', function(event){

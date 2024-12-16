@@ -1030,7 +1030,9 @@ color: black;
     background-size: contain;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
-    background-color:#00000083
+    background-color:#00000083;
+    align-content: center;
+    justify-content: center;
   }
 
   .dark{
