@@ -16,7 +16,7 @@
             "outputPath": "docs",
             "index":{
               "input": "src/index.html",
-              "output": "../index.html"
+              "output": "index.html"
             } ,
             "browser": "src/main.ts",
             "polyfills": [
