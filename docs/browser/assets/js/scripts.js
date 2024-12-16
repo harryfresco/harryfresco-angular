@@ -109,7 +109,8 @@ function changeImageOpacityLanding(opacity) {
 
 function fullscreen(img){
   const fullPage = document.querySelector('#fullpage');
-  fullPage.style.backgroundImage = 'url(' + img+ ')';
+  fullPage.style.backgroundImage = 'url("' + img+ '")';
+  console.log(fullPage)
     fullPage.style.display = 'block';
 }
 
