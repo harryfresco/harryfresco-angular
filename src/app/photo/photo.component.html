@@ -8,7 +8,7 @@
 
      
           <div   *ngFor="let item of pageData.images; let index = index;" class="col columnGalleryMonth" >
-            <img id="{{item.imgPath}}" [src]="item.imgPath" class="d-block w-100" [alt]="item.imgTitle"onClick="fullscreen(this.id)" loading="lazy">
+            <img id="{{item.imgPath}}" [src]="item.imgPath" class="d-block w-100" [alt]="item.imgTitle"onClick="fullscreen(this.id)" [attr.fetchpriority]="index === 0 ? 'high' : null">
             <div class="overlay"id="{{item.imgPath}}"onClick="fullscreen(this.id)">
               <div class="overlayText">
                  <h5 [textContent]="item.imgTitle"></h5>
