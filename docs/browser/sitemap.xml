@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://harryfresco.co.uk</loc>
+    <priority>1.0</priority>
+    </url>
+    <url>
+      <loc>https://harryfresco.co.uk/about</loc>
+            
+    </url>
+    <url>
+      <loc>https://harryfresco.co.uk/gallery</loc>
+      <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>https://harryfresco.co.uk/digital/sky</loc>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://harryfresco.co.uk/digital/japan</loc>
+            <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://harryfresco.co.uk/analogue/june24</loc>
+            <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://harryfresco.co.uk/digital/nov24</loc>
+            <priority>0.8</priority>
+    </url>
+        <url>
+      <loc>https://harryfresco.co.uk/analogue/june22</loc>
+            <priority>0.5</priority>
+    </url>
+            <url>
+      <loc>https://harryfresco.co.uk/analogue/jan23</loc>
+            <priority>0.5</priority>
+    </url>
+            <url>
+      <loc>https://harryfresco.co.uk/analogue/may23</loc>
+            <priority>0.5</priority>
+    </url>
+            <url>
+      <loc>https://harryfresco.co.uk/analogue/aug23</loc>
+            <priority>0.5</priority>
+    </url>
+            <url>
+      <loc>https://harryfresco.co.uk/digital/wizard</loc>
+            <priority>0.5</priority>
+    </url>
+</urlset> 
