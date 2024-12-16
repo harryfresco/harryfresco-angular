@@ -35,8 +35,8 @@
             "scripts": [  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", "./node_modules/jquery/dist/jquery.min.js","src/assets/js/scripts.js"],
             "server": "src/main.server.ts",
             
-            "ssr": true,
-            "prerender":true
+            "ssr": false,
+            "prerender":false
           },
           "configurations": {
             "production": {
