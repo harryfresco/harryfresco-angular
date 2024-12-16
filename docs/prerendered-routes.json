@@ -1,3 +1,19 @@
 {
-  "routes": {}
+  "routes": {
+    "/https://harryfresco.netlify.app": {},
+    "/https://harryfresco.netlify.app/about": {},
+    "/https://harryfresco.netlify.app/analogue/aug23": {},
+    "/https://harryfresco.netlify.app/analogue/jan23": {},
+    "/https://harryfresco.netlify.app/analogue/june22": {},
+    "/https://harryfresco.netlify.app/analogue/june24": {},
+    "/https://harryfresco.netlify.app/analogue/may23": {},
+    "/https://harryfresco.netlify.app/choose": {},
+    "/https://harryfresco.netlify.app/digital/japan": {},
+    "/https://harryfresco.netlify.app/digital/june24d": {},
+    "/https://harryfresco.netlify.app/digital/nov24": {},
+    "/https://harryfresco.netlify.app/digital/sky": {},
+    "/https://harryfresco.netlify.app/digital/wizard": {},
+    "/https://harryfresco.netlify.app/gallery": {},
+    "/https://harryfresco.netlify.app/landing": {}
+  }
 }
