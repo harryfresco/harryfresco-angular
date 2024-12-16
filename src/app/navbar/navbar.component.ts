@@ -5,6 +5,7 @@ import { filter, Subscription } from 'rxjs';
 import { DataService } from '../data.service';
 declare function setNavLink(): void;
 import { NgFor, NgIf, NgClass } from '@angular/common';
+import { LoadingService } from '../loading.service';
 
 declare function makeLinksActive(): void;
 @Component({
@@ -19,7 +20,7 @@ export class NavbarComponent {
   __URL: string = '';
   nav;
   routeOut: string = '';
-  constructor(private router: Router, public dataService: DataService, private route: ActivatedRoute) {
+  constructor(private router: Router, public dataService: DataService, private route: ActivatedRoute,private loadingService: LoadingService) {
     //console.log(router.url); // This will print the current url
     this.__URL = this.router.url;
 
@@ -27,12 +28,14 @@ export class NavbarComponent {
 
   ngOnInit(): void {    
 
-
+     // Turn on the loading spinner
+     this.loadingService.loadingOn();
     if (this.__URL) {
       //get all pages based on url "/digital/**"
       this.dataService.getNavFromFormat(this.__URL).subscribe((data) => {
 
         this.nav = data;
+        this.loadingService.loadingOff();
        // console.log(data)
       });
 
