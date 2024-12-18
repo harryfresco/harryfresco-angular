@@ -18,9 +18,13 @@ function showMusic(id) {
 
 function myFunction() {
   var x = document.getElementById("myLinks");
+  var title = document.getElementById("title");
+  
   if (x.style.display === "block") {
+    title.style.visibility = "visible";
     x.style.display = "none";
   } else {
+    title.style.visibility = "hidden";
     x.style.display = "block";
   }
 }

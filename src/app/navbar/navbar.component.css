@@ -51,7 +51,7 @@
   
   .topnav a {
     color: black;
-    padding: 15px;
+    padding-left: 15px;
     text-decoration: none;
     font-size: 17px;
     display: none;
@@ -78,7 +78,7 @@
   .mobileTitle{
     visibility: hidden;
     display: none;
-    text-decoration: underline !important;
+
   }
   @media (max-width: 667px) {
     .topnav {
@@ -92,7 +92,8 @@
       visibility: visible;
       display: block;
       padding: 0px;
-      margin:15px
+      margin-left:15px
+
   }
 
     .desktopNav {
@@ -102,6 +103,12 @@
     .mobileTitle{
       visibility: visible;
       display: block;
+      font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20pt;
+  letter-spacing: 4px;
+  margin-top: 15px;
     }
     
   }
