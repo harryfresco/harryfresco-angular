@@ -67,7 +67,7 @@
   }
   
   .topnav a:hover {
-    background-color: #949494;
+    
     color: black;
   }
   
@@ -94,6 +94,7 @@
       padding: 0px;
       margin:15px
   }
+
     .desktopNav {
       visibility: hidden;
       display: none;
