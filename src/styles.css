@@ -2,6 +2,11 @@ body{
   background-color: #f7f1de;
 }
 
+a{
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Futura PT Medium';
   font-style: normal;
@@ -43,11 +48,13 @@ body{
   color: black;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
+    display: inline !important;
 }
 .navbarText:hover{
     color:rgb(211, 211, 211);
 }
 #musicText{
+  text-align: center;
     cursor: pointer;
     transition: color 0.20s ease-in-out;
 }
@@ -515,7 +522,7 @@ p{
 }
 
 .newButton{
-  padding: 21px 34px;
+  padding: 15px;
  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -565,6 +572,7 @@ color: black;
 
 .desktopNav {
   visibility: visible;
+
 }
 
 .mobileTitle{
@@ -1102,4 +1110,17 @@ opacity: 0.8;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.navSelectors{
+  padding-right: 50px;
+  
+  color: #000;
+  cursor: pointer;
+  font-size: 20pt;
+}
+.navItems{
+  visibility: hidden;
+  display: none;
+  padding-right: 50px;
 }

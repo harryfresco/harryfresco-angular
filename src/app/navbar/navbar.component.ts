@@ -19,6 +19,8 @@ export class NavbarComponent {
   private routeSubscription: Subscription = new Subscription(); // To hold the subscription
   __URL: string = '';
   nav;
+  digital;
+  analogue;
   routeOut: string = '';
   constructor(private router: Router, public dataService: DataService, private route: ActivatedRoute,private loadingService: LoadingService) {
     //console.log(router.url); // This will print the current url
@@ -30,7 +32,18 @@ export class NavbarComponent {
 
      // Turn on the loading spinner
      this.loadingService.loadingOn();
+           //get all pages based on url "/digital/**"
+           this.dataService.getAllFromFormat("/digital").subscribe((data) => {
+            this.digital = data; 
+           // console.log(data)
+          });
+          //get all pages based on url "/analogue/**"
+          this.dataService.getAllFromFormat("/analogue").subscribe((data) => {
+          this.analogue = data; 
+          // console.log(data)
+        });
     if (this.__URL) {
+      
       //get all pages based on url "/digital/**"
       this.dataService.getNavFromFormat(this.__URL).subscribe((data) => {
 
@@ -46,7 +59,7 @@ export class NavbarComponent {
   }
   ngAfterViewInit() {
 
-    setNavLink(); // Call the JavaScript function
+   // setNavLink(); // Call the JavaScript function
   }
 
 

@@ -6,50 +6,74 @@
 
 
   <!-- Top Navigation Menu -->
-  <div class="topnav" onload="setNavLink()">
-    <a class="active navbarText mobileTitle" id="title" >{{nav.__URL}}</a>
+  <div class="topnav" >
+    <a class="navbarText mobileTitle" id="title" ></a>
     <div id="myLinks">
-      <div *ngFor="let item of nav;let index = index">
-        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)" routerLinkActive="active">{{ item.navbarTitle }}</a>
-        <!-- <a class="navbarText" routerLink="/analogue/jan23"onClick="changeNavLinks('jan23')">jan '23</a>
-        <a class="navbarText rainbowText" routerLink="/analogue/may23"onClick="changeNavLinks('may23')">may '23</a>
-        <a class="navbarText rainbowText" routerLink="/analogue/aug23"onClick="changeNavLinks('aug23')">aug '23</a>
-        <a class="navbarText rainbowText" routerLink="/analogue/june24"onClick="changeNavLinks('june24')">june '24</a> -->
+      <div class="navChooser">
+        <a id="digital" class="navSelectors" onClick="showNavLinks(this.id)">digital</a>
+        <div class="row">
+        <div id="digitalItems" *ngFor="let item of digital;let index = index" class=" navItems">
+        
+            <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)"
+            routerLinkActive="mobileActive">-- {{ item.navbarTitle }}</a>
+      
+          </div>
+        </div>
+        
+        <a id="analogue" class="navSelectors" onClick="showNavLinks(this.id)">analogue</a>
+        <div class="row">
+        <div id="analogueItems" *ngFor="let item of analogue;let index = index" class=" navItems" >
+        
+             <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)"
+            routerLinkActive="mobileActive">-- {{ item.navbarTitle }}</a>
+    </div>
+         
+        </div>
+        <div class = "row">
+          <div class="col-3-md">
+            <div id="musicContainerMobile">
+              <h1 class="newButton" id="musicText" onclick="showMusic('mobile')">click here for music</h1>
+        
+            </div>
+              
+          </div>
+        
+        </div>
       </div>
+
      
     </div>
     <a class="icon" onClick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-  </div>
-<div class="container text-center">
-
-
-<!--   <div class="row justify-content-md-center">
-      <div class="col-12" style="text-align: center;">
-        <a class="navbarText" href="">all photos</a>
-      </div>
-  </div> -->
-  <div class="row desktopNav">
-    <div *ngFor="let item of nav;let index = index" class="col" style="text-align: center;">
-      
-        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)" routerLinkActive="desktopNavActive">{{ item.navbarTitle }}</a>
     
-    </div>
+  </div>
+<div class="container" >
 
-<!--     <div class="col" style="text-align: center;">
-      <a class="navbarText" routerLink="/analogue/jan23" onClick="changeNavLinks('jan23')">jan '23</a>
+
+
+  <div class="row desktopNav">
+    <div class="navChooser">
+      <a id="digital" class="navSelectors" onClick="showNavLinks(this.id)">digital</a>
+      <a id="analogue" class="navSelectors" onClick="showNavLinks(this.id)">analogue</a>
     </div>
-    <div class="col rainbowText" style="text-align: center;">
-      <a class="navbarText rainbowText" routerLink="/analogue/may23" onClick="changeNavLinks('may23')">may '23</a>
+    <div>
+      <div id="digitalItems" *ngFor="let item of digital;let index = index" class=" navItems">
+        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)"
+          routerLinkActive="desktopNavActive">{{ item.navbarTitle }}</a>
+      </div>
+      <div id="analogueItems" *ngFor="let item of analogue;let index = index" class=" navItems" >
+        <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)"
+          routerLinkActive="desktopNavActive">{{ item.navbarTitle }}</a>
+      </div>
     </div>
-    <div class="col" style="text-align: center;">
-      <a class="navbarText rainbowText" routerLink="/analogue/aug23" onClick="changeNavLinks('aug23')">aug '23</a>
-    </div>
-    <div class="col " style="text-align: center;">
-      <a class="navbarText rainbowText" routerLink="/analogue/june24" onClick="changeNavLinks('june24')">june '24</a>
-    </div> -->
-</div>
+    <!--     <div *ngFor="let item of nav;let index = index" class="col" style="text-align: center;">
+        
+          <a id="{{item.route}}" class="navbarText" routerLink={{item.route}} onClick="changeNavLinks(this.id)" routerLinkActive="desktopNavActive">{{ item.navbarTitle }}</a>
+      
+      </div> -->
+  
+  </div>
 <div class = "row">
   <div class="col-3-md">
     <div id="musicContainer">
