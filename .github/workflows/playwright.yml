@@ -22,7 +22,6 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
     - name: Stop server
-        if: always() # Ensures this step runs even if tests fail
         run: kill $(lsof -t -i:4200) || true
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}

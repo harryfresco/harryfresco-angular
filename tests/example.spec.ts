@@ -10,7 +10,7 @@ import { test, expect } from '@playwright/test';
 // await expect(page.locator('div').filter({ hasText: 'clifton suspension bridgei' }).nth(3)).toBeVisible();
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('http://localhost:4200/');
+  await page.goto('/');
   await page.getByRole('button', { name: 'Entry, please' }).click();
   await page.getByRole('button', { name: 'digital' }).click();
 });
