@@ -17,12 +17,8 @@ jobs:
       run: npm ci --force
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps --force
-    - name: Start local server
-      run: npx run start 
     - name: Run Playwright tests
       run: npx playwright test
-    - name: Stop server
-        run: kill $(lsof -t -i:4200) || true
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
