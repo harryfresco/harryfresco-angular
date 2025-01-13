@@ -17,6 +17,13 @@ jobs:
       run: npm ci --force
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps --force
+    - name: Start local server
+        run: npm run start & # Start the server in the background
+        env:
+          PORT: 4200 # Set the server's port if necessary
+    - name: Wait for server to be ready
+        run: |
+          npx wait-on http://localhost:4200
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4
