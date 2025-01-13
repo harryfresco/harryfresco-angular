@@ -160,6 +160,17 @@
                 "imgPath": "assets/img/aug23/063800010030~2.jpeg"
             },
             {
+                "imgTitle": "mount snowden",
+                "imgDesc": "snowdonia",
+                "imgPath": "assets/img/aug23/063800010029.jpeg"
+            },
+            {
+                "imgTitle": "the village",
+                "imgDesc": "who is number one?",
+                "imgPath": "assets/img/aug23/Untitled-2.jpeg",
+                "darkButtons":true
+            },
+            {
                 "imgTitle": "portmeirion, wales",
                 "imgDesc": "the village.",
                 "imgPath": "assets/img/aug23/Untitled-1.jpeg",
@@ -175,17 +186,8 @@
                 "imgDesc": "",
                 "imgPath": "assets/img/aug23/063800010023.jpeg"
             },
-            {
-                "imgTitle": "mount snowden",
-                "imgDesc": "snowdonia",
-                "imgPath": "assets/img/aug23/063800010029.jpeg"
-            },
-            {
-                "imgTitle": "the village",
-                "imgDesc": "who is number one?",
-                "imgPath": "assets/img/aug23/Untitled-2.jpeg",
-                "darkButtons":true
-            },
+
+
             {
                 "imgTitle": "i am not a number",
                 "imgDesc": "i am a free man",
@@ -207,6 +209,12 @@
                 "imgTitle": "clifton suspension bridge",
                 "imgDesc": "i was going to take a picture of an old couple here, but i ran out of film",
                 "imgPath": "assets/img/june24/000255050003.jpeg"
+            },
+            {
+                "imgTitle": "couple + concorde",
+                "imgDesc": "",
+                "imgPath": "assets/img/june24/000255050009.jpeg",   
+                "darkText":true
             },
             {
                 "imgTitle": "an old mans bum",
@@ -237,12 +245,7 @@
                 "imgDesc": "again, sorry",
                 "imgPath": "assets/img/june24/000255050001.jpeg"
             },
-            {
-                "imgTitle": "couple + concorde",
-                "imgDesc": "",
-                "imgPath": "assets/img/june24/000255050009.jpeg",   
-                "darkText":true
-            },
+
             {
                 "imgTitle": "haunted 2",
                 "imgDesc": "i don't know how this was on the film",
@@ -269,14 +272,15 @@
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/wizard/2024-0608-01275500-66658f51083d5.jpeg"
+                "imgPath": "assets/digital/wizard/2024-0607-21453600-66658f4573c9a.jpeg",
+                "darkButtons":true
             },
             {
                 "imgTitle": "",
                 "imgDesc": "",
-                "imgPath": "assets/digital/wizard/2024-0607-21453600-66658f4573c9a.jpeg",
-                "darkButtons":true
+                "imgPath": "assets/digital/wizard/2024-0608-01275500-66658f51083d5.jpeg"
             },
+
             {
                 "imgTitle": "",
                 "imgDesc": "",
@@ -322,16 +326,22 @@
                 "imgPath": "assets/digital/japan/DSCF2224.jpeg"
             },
             {
-                "imgTitle": "kyoto",
-                "imgDesc": "temple",
-                "imgPath": "assets/digital/japan/Untitled-2.jpeg",
-                "darkButtons":true
+                "imgTitle": "kyoto budo centre",
+                "imgDesc": "",
+                "imgPath": "assets/digital/japan/DSCF1170.jpeg"
             },
             {
                 "imgTitle": "Kyoto Budo Centre",
                 "imgDesc": "Japan's oldest martial arts exercise hall",
                 "imgPath": "assets/digital/japan/karate.jpeg"
             },
+            {
+                "imgTitle": "kyoto",
+                "imgDesc": "temple",
+                "imgPath": "assets/digital/japan/Untitled-2.jpeg",
+                "darkButtons":true
+            },
+          
             {
                 "imgTitle": "hiroshima",
                 "imgDesc": "the building at the hypocentre of the A-Bomb",
@@ -364,11 +374,6 @@
                 "imgTitle": "kyoto budo centre",
                 "imgDesc": "kendo practice",
                 "imgPath": "assets/digital/japan/DSCF1207.jpeg"
-            },
-            {
-                "imgTitle": "kyoto budo centre",
-                "imgDesc": "",
-                "imgPath": "assets/digital/japan/DSCF1170.jpeg"
             }
         ]
     },
