@@ -27,6 +27,19 @@ Then commit and push to Git
 
 Run buildScrip.sh to do the above steps for you
 
+## To run tests
+```bash
+npx playwright test --ui
+```
+or to run in CLI:
+```bash
+npx playwright test
+```
+## To run the Playwright Codegen
+```bash
+npx playwright codegen harryfresco.co.uk
+```
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
