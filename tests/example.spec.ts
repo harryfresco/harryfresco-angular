@@ -15,7 +15,7 @@ test('photos load', async ({ page }) => {
     const route = page.url().replace(baseUrl, '');
     //console.log(route)
     let testAlt = data[route].images[0].imgTitle
-    console.log(testAlt)
+    // console.log(testAlt)
   // The picture with alt text 'miyajima island' should be visible 
   // (Added a long timeout as I haven't made it wait for loader to be finished)
   await expect(page.getByAltText(testAlt)).toBeVisible({ timeout: 15000 });
