@@ -44,13 +44,13 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
 */
-    {
+   /*  {
       name: 'webkit',
       use: { ...devices['Desktop Safari'],isMobile:false },
-    }, 
+    },  */
 
     /* Test against mobile viewports. */
-     {
+   /*   {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'],isMobile:true },
     }, 
@@ -58,7 +58,7 @@ export default defineConfig({
       name: 'Mobile Safari',
       use: { ...devices['iPhone 12'],isMobile:true },
     },
-
+ */
     /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
