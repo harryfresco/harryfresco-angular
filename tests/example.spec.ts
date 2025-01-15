@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 import * as data from '../src/assets/data.json';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('./', {'timeout': 120000});
+  test.setTimeout(120000)
+  await page.goto('./');
   await expect(page.getByRole('button', { name: 'Entry, please' })).toBeVisible();
   // Click landing cta
   await page.getByRole('button', { name: 'Entry, please' }).click();
