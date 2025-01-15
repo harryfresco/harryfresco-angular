@@ -291,7 +291,7 @@ p{
   .columnGalleryMonth {
     flex: 50%;
     max-width: 50%;
-    padding: 4px;
+    padding: 25px;
   }
   
   .columnGallery img {
@@ -321,12 +321,17 @@ p{
       max-width: 50%;
     }
   }
-  
+  @media screen and (max-width: 767px){
+    .columnGalleryMonth{
+      padding:10px;
+    }
+  }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .columnGalleryMonth {
       flex: 100%;
       max-width: 100%;
+      padding:25px;
     }
   }
 
