@@ -11,8 +11,16 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## To Commit, Test, Build and Deploy
 
-## To Build and Deploy
+You just need to include this in your Github Commit message. Otherwise it will build twice, before and after tests:
+```
+[skip netlify]
+```
+I have set up a Github Action to run Playwright Tests -> Then it triggers Netlify to build and publish
+
+
+## Just build.
 
 ```bash
 ng build --base-href="https://harryfresco.co.uk/"
@@ -26,8 +34,6 @@ Then commit and push to Git
 
 Run buildScriptNetlofy.sh to do the above steps for you
 
-## Update:
-I think I have setup GitHub Actions to run the tests, deploy to Netlify, who then builds it.
 
 ## To run tests
 ```bash
@@ -55,34 +61,6 @@ For a complete list of available schematics (such as `components`, `directives`,
 ```bash
 ng generate --help
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
