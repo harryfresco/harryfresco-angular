@@ -24,7 +24,7 @@ Then commit and push to Git
 
 ## OR use the build script
 
-Run buildScrip.sh to do the above steps for you
+Run buildScriptNetlofy.sh to do the above steps for you
 
 ## Update:
 I think I have setup GitHub Actions to run the tests, deploy to Netlify, who then builds it.
