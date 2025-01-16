@@ -27,6 +27,9 @@ Then commit and push to Git
 
 Run buildScrip.sh to do the above steps for you
 
+## Update:
+I think I have setup GitHub Actions to run the tests, deploy to Netlify, who then builds it.
+
 ## To run tests
 ```bash
 npx playwright test --ui
