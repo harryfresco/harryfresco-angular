@@ -25,3 +25,5 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Deploy Site
+      run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
