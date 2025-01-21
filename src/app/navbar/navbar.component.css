@@ -78,7 +78,7 @@
   .mobileTitle{
     visibility: hidden;
     display: none;
-
+    width: fit-content;
   }
   @media (max-width: 667px) {
     .topnav {
@@ -141,4 +141,15 @@
   }
   #musicContainer{
     text-align: center;
+  }
+  .navbarLogo{
+    height: 90px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .desktopTitle{
+    height: 90px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-left: 40px;
   }

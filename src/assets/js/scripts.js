@@ -22,9 +22,11 @@ function myFunction() {
   
   if (x.style.display === "block") {
     title.style.visibility = "visible";
+    title.style.display='block'
     x.style.display = "none";
   } else {
     title.style.visibility = "hidden";
+      title.style.display='none'
     x.style.display = "block";
   }
 }

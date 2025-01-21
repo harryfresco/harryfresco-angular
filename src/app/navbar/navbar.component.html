@@ -7,9 +7,10 @@
 
   <!-- Top Navigation Menu -->
   <div class="topnav" >
-    <a class=" mobileTitle" id="title" >harry fresco</a>
-    <div id="myLinks">
+    <a class=" mobileTitle" id="title" href="/" ><img src="../../assets/media/harry fresco font ps.png" class="navbarLogo" alt="harry fresco logo"> </a>
+    <div id="myLinks"> 
       <div class="navChooser">
+        <a class=" mobileTitle" id="title" href="/"><img src="../../assets/media/harry fresco font ps.png" class="navbarLogo"alt="harry fresco logo"> </a>
         <a id="digital" class="navSelectors" onClick="showNavLinks(this.id)">digital</a>
         <div class="row">
         <div id="digitalItems" *ngFor="let item of digital;let index = index" class=" navItems">
@@ -63,6 +64,10 @@
 
 
   <div class="row desktopNav">
+    <div class="row" style="text-align: center; display: inline-block;">
+      <a  href="/" ><img src="../../assets/media/harry fresco font ps.png" class="desktopTitle"alt="harry fresco logo"> </a>
+    </div>
+   
     <div class="navChooser">
       <a id="digital" class="navSelectors" onClick="showNavLinks(this.id)">digital</a>
       <a id="analogue" class="navSelectors" onClick="showNavLinks(this.id)">analogue</a>

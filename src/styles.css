@@ -85,13 +85,16 @@ display: block;
  backface-visibility: hidden;
  
 }
-@media (max-width: 667px) {
+@media (max-width: 796px) {
     .backgroundImage {
         height: 100vh; /* Adjust the width for smaller screens */
         width: 200vw;
         top:50%;
         object-fit: cover;
         transform: translate(-50%, -50%);
+    }
+    .landingLogo{
+      width: 400px !important;
     }
 }
 
@@ -101,6 +104,7 @@ display: block;
         top:50%;
         transform: translate(0, -50%);
     }
+
 }
 
 @media (min-width: 1201px) {
@@ -464,6 +468,9 @@ color: black;
   .button-53 {
    font-size: 20px;
    width: auto;
+  }
+  .landingLogo{
+    width: 400px !important;
   }
 }
 
@@ -939,4 +946,30 @@ opacity: 0.8;
   visibility: hidden;
   display: none;
   padding-right: 50px;
+}
+
+.landingLogo{
+  width: 800px;
+  padding: 0px 15px 0px 15px;
+}
+@media (max-width: 666px) {
+  #largeLanding{
+    visibility: hidden;
+    display:none;
+  }
+  #smallLanding{
+    visibility: visible;
+    display: block;
+  }
+}
+@media (min-width: 667px) {
+  #largeLanding{
+    visibility: visible;
+    display: block;
+
+  }
+  #smallLanding{
+    visibility: hidden;
+    display:none;
+  }
 }
