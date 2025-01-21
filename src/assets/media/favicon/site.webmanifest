@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Harry Fresco's App",
+  "short_name": "Harry Fresco",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
