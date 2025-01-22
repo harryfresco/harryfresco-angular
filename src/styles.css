@@ -1,7 +1,24 @@
 body{
   background-color: #f7f1de;
 }
-
+p{
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+h1{
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 5px;
+}
+h2{
+  font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 5px;
+}
 a{
   font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
   font-weight: 400;

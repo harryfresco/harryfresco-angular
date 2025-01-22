@@ -55,7 +55,7 @@ export class DataService {
             allImages.push(...section.images);
           }});
         // Initialize an empty object to accumulate the result
-console.log(allImages)
+//console.log(allImages)
         return allImages;})  // Extract the page data based on the route i.e /aug23
 
     );

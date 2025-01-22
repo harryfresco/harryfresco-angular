@@ -5,6 +5,7 @@ import { ChooseComponent } from './choose/choose.component';
 import { PhotoComponent } from './photo/photo.component';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { CvComponent } from './cv/cv.component';
 
 export const routes: Routes = [
 /*     { path : 'analogue/june22', component: PhotoComponent, title: 'Harry Fresco | June 22' },
@@ -22,6 +23,7 @@ export const routes: Routes = [
     { path : 'digital/japan', component: PhotoComponent, title: 'Harry Fresco | Japan'},
     { path : 'digital/sky', component: PhotoComponent, title: 'Harry Fresco | Sky'},
     { path : 'digital/nov24', component: PhotoComponent, title: 'Harry Fresco | Nov 24'},
+    { path : 'cv', component: CvComponent, title: 'Harry Fresco | CV'},
     { path : 'gallery', loadComponent:() => import('./gallery/gallery.component').then(m=>m.GalleryComponent), title: 'Harry Fresco | Gallery'},
     { path : 'about', component: AboutComponent, title: 'Harry Fresco | About'},
     { path : '**', component: NotfoundComponent, title: 'Harry Fresco | 404'},
