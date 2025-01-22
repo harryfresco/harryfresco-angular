@@ -45,12 +45,18 @@ export class DataService {
   }
   //Get all data from data.json
   getAll(){
+    const allImages: any[] = [];
+    
     return this.http.get<any>('assets/data.json').pipe(
+      
       map(data => {        
-        const filteredData = Object.values(data)
+         Object.values(data).forEach((section: any) => {
+          if (section.images && Array.isArray(section.images)) {
+            allImages.push(...section.images);
+          }});
         // Initialize an empty object to accumulate the result
-
-        return filteredData;})  // Extract the page data based on the route i.e /aug23
+console.log(allImages)
+        return allImages;})  // Extract the page data based on the route i.e /aug23
 
     );
   }

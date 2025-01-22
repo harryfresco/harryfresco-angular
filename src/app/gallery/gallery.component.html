@@ -1,9 +1,9 @@
 <div class="container" >
     <div class="row" *ngIf="all">
-        <div class="col columnGallery" *ngFor="let month of all;let index = index">
-            <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" routerLink={{month.route}}>
+        <div class=" columnGallery" *ngFor="let image of all;let index = index">
+            <a id="{{index}}" onmouseover="changeImageOpacityGallery(0.5, this.id)" onmouseout="changeImageOpacityGallery(1, this.id)" >
 
-            <img  [src]="img.imgPath" class="{{index}} imageHover" *ngFor="let img of month.images;" [alt]="img.imgTitle" >
+            <img  id="{{image.imgPath}}" [src]="image.imgPath" class="{{index}} imageHover" [alt]="image.imgTitle" onClick="fullscreen(this.id)">
 
         </a>
         </div>
@@ -16,3 +16,4 @@
 
 
 </div>
+<div id="fullpage" onclick="this.style.display='none';"></div>

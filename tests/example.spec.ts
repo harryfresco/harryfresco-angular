@@ -30,7 +30,7 @@ test('navbar works', async ({ page, isMobile }) => {
     // The analogue navbar should be visible
     // await expect(page.getByText('wizardjapanskynov \'24black &')).toBeVisible();
     // Click 'bristol'
-    await page.getByRole('link', { name: 'bristol' }).click();
+    await page.getByRole('link', { name: 'colour' }).click();
   }
   else{
     // The hamburger icon should be visible
@@ -41,11 +41,11 @@ test('navbar works', async ({ page, isMobile }) => {
     await page.locator('#myLinks').getByText('analogue').click();
     // '--bristol' should now show
     // await expect(page.getByRole('link', { name: '-- bristol' })).toBeVisible();
-    await page.getByRole('link', { name: '-- bristol' }).click();
+    await page.getByRole('link', { name: '-- colour' }).click();
   }
   // The title of the new 'bristol' page should be visible 
   // (Didn't want to test for an image as that could be uneccessary duplication?)
-  await expect(page.getByRole('heading', { name: 'bristol.' })).toBeVisible({ timeout: 15000 });
+  await expect(page.getByRole('heading', { name: 'the colour era' })).toBeVisible({ timeout: 15000 });
 });
 test('gallery load', async ({ page, isMobile }) => {
   // Click 'View All'
@@ -59,7 +59,7 @@ test('gallery load', async ({ page, isMobile }) => {
     // .first() because it brings up both the navbar and footer buttons, even though only one is visible
     await page.getByRole('link', { name: 'view all' }).first().click();
   }
-  let testAlt = data['/analogue/may23'].images[1].imgTitle
+  let testAlt = data['/analogue/blackandwhite'].images[1].imgTitle
   // The picture with alt text 'greenwich' should be visible
   await expect(page.getByAltText(testAlt)).toBeVisible({ timeout: 15000 });
   

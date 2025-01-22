@@ -7,11 +7,13 @@ import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 export const routes: Routes = [
-    { path : 'analogue/june22', component: PhotoComponent, title: 'Harry Fresco | June 22' },
+/*     { path : 'analogue/june22', component: PhotoComponent, title: 'Harry Fresco | June 22' },
     { path : 'analogue/jan23', component: PhotoComponent, title: 'Harry Fresco | Jan 23' },
     { path : 'analogue/may23', component: PhotoComponent, title: 'Harry Fresco | May 23' },
     { path : 'analogue/aug23', component: PhotoComponent, title: 'Harry Fresco | Aug 23' },
-    { path : 'analogue/june24', component: PhotoComponent, title: 'Harry Fresco | June 23' },
+    { path : 'analogue/june24', component: PhotoComponent, title: 'Harry Fresco | June 23' }, */
+    { path : 'analogue/blackandwhite', component: PhotoComponent, title: 'Harry Fresco | Black and White' },
+    { path : 'analogue/colour', component: PhotoComponent, title: 'Harry Fresco | Colour' },
     { path : '', component: LandingComponent, title: 'Harry Fresco' },
     { path : 'landing', component: LandingComponent, title: 'Harry Fresco' },
     { path : 'choose', component: ChooseComponent,  title: 'Harry Fresco | Choose' },
