@@ -14,9 +14,6 @@ import { LoadingService } from '../loading.service';
 })
 export class GalleryComponent {
   __URL: string = ""
-  pageData: any = {};
-  allInFormat: any={};
-  allInFormatDigital: any={};
   all;
   constructor(private dataService: DataService,
  public router: Router,private loadingService: LoadingService) {
